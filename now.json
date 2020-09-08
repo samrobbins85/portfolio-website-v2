@@ -1,10 +1,13 @@
 {
   "version": 2,
+	{
+  "name": "next-portfolio-website"
+},
   "github": {
 	    "silent": true
 	},
   "alias": ["tailwind.samrobbins.uk"],
-  "name": "Personal Website",
+  "name": "Next Personal Website",
   "redirects":[
     {"source": "/shdh", "destination": "https://samrobbins.uk/portfolio/same-home-different-hacks/"},
     {"source": "/digithon", "destination": "https://samrobbins.uk/portfolio/oxford-digithon/"},
