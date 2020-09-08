@@ -4,7 +4,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    content: ["./themes/hugo-developer-portfolio/layouts/**/*.html"],
+    content: ["./themes/tailwind-developer-website/layouts/**/*.html"],
   },
   theme: {
     extend: {},
