@@ -1038,9 +1038,9 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-prettier-plugin-go-template@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-go-template/-/prettier-plugin-go-template-0.0.7.tgz#60fbc72ca2cd55193bfd77994ef9ddc3f15d0f7e"
+prettier-plugin-go-template@0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-go-template/-/prettier-plugin-go-template-0.0.9.tgz#6d500e821a42d22de03a5d5e29c497c8f514f039"
 
 prettier@^2.1.1:
   version "2.1.1"
