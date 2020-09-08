@@ -4,7 +4,10 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    content: ["./themes/tailwind-developer-website/layouts/**/*.html"],
+    content: [
+      "./themes/tailwind-developer-website/layouts/**/*.html",
+      "./data/*.yml",
+    ],
   },
   theme: {
     extend: {},
