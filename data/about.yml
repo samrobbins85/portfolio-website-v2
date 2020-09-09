@@ -17,3 +17,18 @@ leadership:
       title: Bronze and Silver DofE
       company: The Duke of Edinburgh's Award
       duration: June 2014 - January 2017
+experience:
+  enable: true
+  item:
+    - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597050679/icon_fjhqxr.png
+      title: Student Intern
+      company: Global Cyber Alliance
+      duration: July 2020 - September 2020
+    - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793271/logos/logos_google_id6v9a.svg
+      title: init.g
+      company: Google
+      duration: November 2019
+    - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793275/logos/logos_pmt_tdrgcd.webp
+      title: Web Developer
+      company: Physics and Maths Tutor
+      duration: October 2019 - Present
