@@ -11,7 +11,20 @@ module.exports = {
   },
   theme: {
     extend: {},
+    typography: {
+      default: {
+        css: {
+          pre: {
+            code: {
+              "&:after": { content: "none !important" },
+            },
+          },
+        },
+      },
+    },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    display: ["group-hover"],
+  },
+  plugins: [require("@tailwindcss/typography")],
 };

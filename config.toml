@@ -4,6 +4,8 @@ languageCode = "en-gb"
 title = "Sam Robbins"
 theme = "tailwind-developer-website"
 googleAnalytics = "UA-156072112-1"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 # Plugins
 [params.plugins]
 
@@ -36,10 +38,6 @@ googleAnalytics = "UA-156072112-1"
   URL = "portfolio"
   weight=3
 
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight=4
 
 
 [params]
@@ -67,6 +65,5 @@ author = "Sam Robbins"
     lineNos = false
     lineNumbersInTable = false
     noClasses = true
-    style = "rainbow_dash"
     tabWidth = 4
 
