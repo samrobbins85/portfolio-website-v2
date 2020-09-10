@@ -75,3 +75,42 @@ education:
       institution: The King Edward VI School
       image: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793272/logos/logos_kevi_ksyppz.webp
       background: bg-red-100
+skills:
+  enable: true
+  item:
+    - name: Next.js
+      image: https://cdn.svgporn.com/logos/nextjs.svg
+      url: https://nextjs.org
+    - name: Tailwind CSS
+      image: https://cdn.svgporn.com/logos/tailwindcss.svg
+      url: https://tailwindcss.com/
+    - name: Vercel
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1597140162/Vercel_zgou38.svg
+      url: https://vercel.com
+    - name: React
+      image: https://cdn.svgporn.com/logos/react.svg
+      url: https://reactjs.org/
+    - name: Hugo
+      image: https://cdn.svgporn.com/logos/hugo.svg
+      url: https://gohugo.io/
+    - name: Algolia
+      image: https://cdn.svgporn.com/logos/algolia.svg
+      url: https://www.algolia.com/
+    - name: MongoDB
+      image: https://cdn.svgporn.com/logos/mongodb.svg
+      url: https://www.mongodb.com/
+    - name: MDX
+      image: https://cdn.svgporn.com/logos/mdx.svg
+      url: https://mdxjs.com/
+    - name: Docusaurus
+      image: https://cdn.svgporn.com/logos/docusaurus.svg
+      url: https://docusaurus.io
+    - name: GitHub
+      image: https://cdn.svgporn.com/logos/github.svg
+      url: https://github.com/
+    - name: Node.js
+      image: https://cdn.svgporn.com/logos/nodejs.svg
+      url: https://nodejs.org
+    - name: Python
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1598898170/Python_logo_and_wordmark_hi8qjl.svg
+      url: https://www.python.org/
