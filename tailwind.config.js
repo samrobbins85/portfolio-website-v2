@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["Inter var", "Inter"],
+    },
     typography: {
       default: {
         css: {

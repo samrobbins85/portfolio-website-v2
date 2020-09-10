@@ -24,14 +24,17 @@ experience:
       title: Student Intern
       company: Global Cyber Alliance
       duration: July 2020 - September 2020
+      background: bg-blue-100
     - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793271/logos/logos_google_id6v9a.svg
       title: init.g
       company: Google
       duration: November 2019
+      background: bg-green-100
     - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793275/logos/logos_pmt_tdrgcd.webp
       title: Web Developer
       company: Physics and Maths Tutor
       duration: October 2019 - Present
+      background: bg-teal-100
 hackathons:
   enable: true
   item:
@@ -63,10 +66,12 @@ education:
   enable: true
   item:
     - title: BSc Computer Science
-      year: 2018 - Present
+      duration: 2018 - Present
       institution: Durham University
       image: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793268/logos/logos_Durham_fc2sae.svg
+      background: bg-purple-100
     - title: GCSEs and A Levels
-      year: 2013-2018
+      duration: 2013-2018
       institution: The King Edward VI School
       image: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793272/logos/logos_kevi_ksyppz.webp
+      background: bg-red-100

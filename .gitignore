@@ -6,4 +6,4 @@ node_modules
 
 public
 
-resources/_gen
+resources/_gen/*
