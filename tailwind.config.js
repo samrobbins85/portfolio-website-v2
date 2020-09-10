@@ -24,7 +24,7 @@ module.exports = {
     },
   },
   variants: {
-    display: ["group-hover"],
+    display: ["responsive", "group-hover"],
   },
   plugins: [require("@tailwindcss/typography")],
 };
