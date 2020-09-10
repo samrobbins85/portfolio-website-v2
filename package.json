@@ -8,7 +8,7 @@
     "prettier": "^2.1.1",
     "prettier-plugin-go-template": "0.0.10",
     "prettier-plugin-package": "^1.0.0",
-    "tailwindcss": "^1.8.5"
+    "tailwindcss": "^1.8.6"
   },
   "dependencies": {
     "postcss-preset-env": "^6.7.0"
