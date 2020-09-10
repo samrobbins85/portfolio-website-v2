@@ -34,6 +34,7 @@ name = "Algolia"
 url = "https://www.algolia.com/"
 
 +++
+
 This site was built to replace my [existing university notes](https://github.com/samrobbins85/university-notes). I wanted to do this as the PDFs produced by LaTeX weren't as accessible as I wanted them to be, such as not being easy to read on mobile devices. Another benefit that moving to a website brings is that I have the opportunity to include interactive elements.
 
 ## Content format
@@ -62,7 +63,7 @@ There is a bit of a nasty problem with compoinents though in that the content pa
 
 ## MDX processing
 
-Finding the best solution for processing MDX was quite a complicated task due to wanting to have a sidebar on all pages. The problem was that the sidebar is dynamically generated from the input files, and so needed props from the build step, which can use Node.js functions such as `fs`. The implementation of MDX in Next.js doesn't allow this as it just converts  MDX into pages along with that content from the build step fetched through `getStaticProps` can only be used in pages, not components.
+Finding the best solution for processing MDX was quite a complicated task due to wanting to have a sidebar on all pages. The problem was that the sidebar is dynamically generated from the input files, and so needed props from the build step, which can use Node.js functions such as `fs`. The implementation of MDX in Next.js doesn't allow this as it just converts MDX into pages along with that content from the build step fetched through `getStaticProps` can only be used in pages, not components.
 
 My solution to this laid in creating a custom MDX implementation, as documented [here](https://mdxjs.com/getting-started#do-it-yourself). I then used an [optional catch all route](https://nextjs.org/docs/routing/dynamic-routes#optional-catch-all-routes) for all the pages, which made a request through `getStaticProps` for the page content. I used the `directory-tree` NPM package to generate all the valid paths for `getStaticPaths`.
 
@@ -74,7 +75,7 @@ All the styling is handled through [Tailwind CSS](https://tailwindcss.com/), thi
 
 ## Images
 
-Images were somewhat tricky as I couldn't use the same format as I had before where the images are with the content as images have to be served through the `public` directory. My solution to this was to create a very similar hierarchy in the content and images folder so that images are easy to find. 
+Images were somewhat tricky as I couldn't use the same format as I had before where the images are with the content as images have to be served through the `public` directory. My solution to this was to create a very similar hierarchy in the content and images folder so that images are easy to find.
 
 Another thing I did with the images was to convert them all to `webp` to improve pagespeed and reduce bandwidth usage. This was very good, reducing the total image size by over half.
 
@@ -82,7 +83,7 @@ Another thing I did with the images was to convert them all to `webp` to improve
 
 To provide search for this website I used Algolia DocSearch. Sadly as this isn't a documentation website I couldn't get it all provided for free, but luckily there is a very generous plan available for free with the GitHub education pack that provides everything I need. The only limitation is that I have to run the crawler myself, but I can set this up with a Raspberry Pi and a cron job later down the line.
 
-The setup for this was relatively easy as the (Algolia documentation)\[https://docsearch.algolia.com/docs/run-your-own\] is very good. One problem the crawler had was that the pages on the site don't have links to each other as they are rendered when you interact with the site. I solved this by generating a sitemap and passing this to the crawler instead. The search box styling provided by Algolia also isn't mobile friendly which is a bit of a pain, but can easily be solved with the workaround given in [this GitHub issue](https://github.com/algolia/docsearch/issues/181). I'm looking forward to DocSearch v3 which is set to come out soon.
+The setup for this was relatively easy as the [Algolia documentation](https://docsearch.algolia.com/docs/run-your-own) is very good. One problem the crawler had was that the pages on the site don't have links to each other as they are rendered when you interact with the site. I solved this by generating a sitemap and passing this to the crawler instead. The search box styling provided by Algolia also isn't mobile friendly which is a bit of a pain, but can easily be solved with the workaround given in [this GitHub issue](https://github.com/algolia/docsearch/issues/181). I'm looking forward to DocSearch v3 which is set to come out soon.
 
 ## Sitemap
 
