@@ -6,6 +6,7 @@ theme = "tailwind-developer-website"
 googleAnalytics = "UA-156072112-1"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+sectionPagesMenu = "main"
 # Plugins
 [params.plugins]
 
@@ -20,23 +21,7 @@ pygmentsUseClasses = true
   URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"
 
 
-# navigation
-[menu]
 
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight=1
-
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight=2
-
-  [[menu.main]]
-  name = "Portfolio"
-  URL = "portfolio"
-  weight=3
 
 
 
@@ -46,15 +31,6 @@ home = "Home"
 description = "The website of Sam Robbins, 2nd Year Computer Science Student at Durham University"
 author = "Sam Robbins"
 
-
-  [params.contact]
-  enable = true
-  formAction = "https://formspree.io/mlegaggv" #contact form works with formspree.io
-
-  [params.footer]
-  email = "samrobbinsgb@gmail.com"
-  address = "Durham, UK"
-  googlemaps = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U"
 
 [markup]
   [markup.highlight]
