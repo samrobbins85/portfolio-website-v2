@@ -1,4 +1,153 @@
 ---
 label: About
 hide_body: true
-fields: []
+fields:
+- name: experience
+  type: field_group
+  config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: enable
+  - name: item
+    type: field_group_list
+    fields:
+    - name: logo
+      type: file
+      config:
+        maxSize: 64
+      label: logo
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: company
+      type: text
+      config:
+        required: false
+      label: Company
+    - name: duration
+      type: text
+      config:
+        required: false
+      label: Duration
+    - name: background
+      type: text
+      config:
+        required: false
+      label: Background
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: item
+  label: Experience
+- name: hackathons
+  type: field_group
+  config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: enable
+  - name: item
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: description
+      type: text
+      config:
+        required: false
+      label: Description
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    - name: url
+      type: text
+      config:
+        required: false
+      label: url
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: item
+  label: hackathons
+- name: education
+  type: field_group
+  config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: Enable
+  - name: item
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: duration
+      type: text
+      config:
+        required: false
+      label: Duration
+    - name: institution
+      type: text
+      config:
+        required: false
+      label: Institution
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    - name: background
+      type: text
+      config:
+        required: false
+      label: background
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: item
+  label: Education
+- name: skills
+  type: field_group
+  config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: Enable
+  - name: item
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    - name: url
+      type: text
+      config:
+        required: false
+      label: url
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: item
+  label: Skills
