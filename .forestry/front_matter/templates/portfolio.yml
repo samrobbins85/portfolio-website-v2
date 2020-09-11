@@ -15,9 +15,6 @@ fields:
 - type: text
   name: description
   label: description
-- type: text
-  name: type
-  label: type
 - type: list
   name: coders
   label: coders
