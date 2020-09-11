@@ -4,7 +4,7 @@ coders = []
 date = 2019-05-01T23:00:00Z
 description = "A simple social media app"
 github = ["https://github.com/samrobbins85/Progamming-REST-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593601766/reddit_jzxbda.svg"
+image = "https://res.cloudinary.com/samrobbins/image/upload/v1599847983/DoogieDoodle_1_uksynv.svg"
 title = "Slate my doggo"
 type = ""
 [[tech]]
