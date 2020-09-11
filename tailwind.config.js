@@ -7,6 +7,7 @@ module.exports = {
     content: [
       "./themes/tailwind-developer-website/layouts/**/*.html",
       "./data/*.yml",
+      "./layouts/**/*.html",
     ],
   },
   theme: {
