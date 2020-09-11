@@ -14,6 +14,18 @@ module.exports = {
     fontFamily: {
       sans: ["Inter var", "Inter"],
     },
+    borderWidth: {
+      default: "1px",
+      0: "0",
+      1: "0.25rem",
+      2: "0.5rem",
+      3: "0.75rem",
+      4: "1rem",
+      5: "1.25rem",
+      6: "1.5rem",
+      8: "2rem",
+      16: "4rem",
+    },
     typography: {
       default: {
         css: {
