@@ -151,3 +151,5 @@ fields:
       labelField: 
     label: item
   label: Skills
+pages:
+- data/about.yml
