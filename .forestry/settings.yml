@@ -24,11 +24,6 @@ sections:
   label: Blog
   create: all
   match: "**/*"
-- type: directory
-  path: content/about
-  label: About
-  create: all
-  match: "**/*"
 upload_dir: ''
 public_path: https://res.cloudinary.com/samrobbins/image/upload
 front_matter_path: ''
