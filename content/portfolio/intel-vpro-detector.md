@@ -31,4 +31,4 @@ name = "Golang"
 url = "https://golang.org/"
 
 +++
-![](https://res.cloudinary.com/samrobbins/image/upload/v1599815634/Screenshot_2020-09-08_Sam_s_Notes_kw0p70.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1599815932/2020-09-11_10-18_bcum6z.png)
