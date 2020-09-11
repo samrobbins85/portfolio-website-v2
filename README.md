@@ -4,4 +4,4 @@
 ![GitHub](https://img.shields.io/github/license/samrobbins85/portfolio-website?style=for-the-badge)
 # Portfolio Website
 
-This is the content of my personal website hosted at [samrobbins.uk](https://samrobbins.uk). The theme which I have made is stored in a separate github repository [hugo-developer-portfolio](https://github.com/samrobbins85/hugo-developer-portfolio). 
+This is the content of my personal website hosted at [samrobbins.uk](https://samrobbins.uk). The theme which I have made is stored in a separate github repository [tailwind-developer-website](https://github.com/samrobbins85/tailwind-developer-website). 
