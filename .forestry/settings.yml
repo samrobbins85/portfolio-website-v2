@@ -20,22 +20,12 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/contact
-  label: Contact
-  create: all
-  match: "**/*"
-- type: directory
   path: content/blog
   label: Blog
   create: all
   match: "**/*"
-- type: directory
-  path: content/about
-  label: About
-  create: all
-  match: "**/*"
 upload_dir: ''
-public_path: https://res.cloudinary.com/samrobbins/image/upload/q_auto
+public_path: https://res.cloudinary.com/samrobbins/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
@@ -44,7 +34,8 @@ build:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.71.1
   preview_output_directory: public
-  preview_docker_image: forestryio/hugo:latest
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk

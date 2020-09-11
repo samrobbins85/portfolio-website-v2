@@ -8,6 +8,7 @@ github = ["https://github.com/samrobbins85/electron-intel-vpro", "https://github
 image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599383637/10thgen-ci9-vpro-badge-rwd.png.rendition.intel.web.225.225_jzw2mh.png"
 site = ""
 title = "Intel vPro Detector"
+type = ""
 [[tech]]
 logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599383798/electron_s9r5vn.svg"
 name = "Electron"

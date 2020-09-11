@@ -35,26 +35,6 @@ fields:
     name: gmail
     label: gmail
 - type: field_group
-  name: about
-  label: about
-  fields:
-  - type: boolean
-    name: enable
-    label: enable
-  - type: text
-    name: content
-    label: content
-  - type: field_group
-    name: button
-    label: button
-    fields:
-    - type: text
-      name: btnText
-      label: btnText
-    - type: text
-      name: URL
-      label: URL
-- type: field_group
   name: portfolio
   label: portfolio
   fields:
@@ -68,117 +48,34 @@ fields:
     - type: text
       name: title
       label: title
-    - type: textarea
-      name: description
-      label: description
+    - name: company
+      type: text
+      config:
+        required: false
+      label: Company
+    - name: date
+      type: text
+      config:
+        required: false
+      label: Date
     - name: image
       type: file
       config:
         maxSize: 64
       label: Image
+    - type: textarea
+      name: description
+      label: description
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
     - name: tools
       type: tag_list
       default: []
       label: tools
-- type: field_group
-  name: experience
-  label: experience
-  fields:
-  - type: boolean
-    name: enable
-    label: enable
-  - type: field_group_list
-    name: item
-    label: item
-    fields:
-    - type: file
-      name: logo
-      label: logo
-    - type: text
-      name: title
-      label: title
-    - type: text
-      name: company
-      label: company
-    - type: text
-      name: duration
-      label: duration
-- type: field_group
-  name: hackathons
-  label: hackathons
-  fields:
-  - type: field_group_list
-    name: item
-    label: item
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: text
-      name: description
-      label: description
-    - type: file
-      name: image
-      label: image
-    - type: text
-      name: url
-      label: url
-- type: field_group
-  name: education
-  label: education
-  fields:
-  - type: boolean
-    name: enable
-    label: enable
-  - type: field_group_list
-    name: item
-    label: item
-    fields:
-    - type: text
-      name: academy
-      label: academy
-    - type: text
-      name: title
-      label: title
-    - type: text
-      name: year
-      label: year
-    - type: file
-      name: image
-      label: image
-- type: field_group
-  name: blog
-  label: blog
-  fields:
-  - type: boolean
-    name: enable
-    label: enable
-- type: field_group
-  name: leadership
-  label: leadership
-  fields:
-  - type: boolean
-    name: enable
-    label: enable
-  - type: field_group_list
-    name: item
-    label: item
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: text
-      name: company
-      label: company
-    - type: text
-      name: duration
-      label: duration
-    - name: logo
-      type: file
-      config:
-        maxSize: 64
-      label: Logo
-- name: awards
+- name: achievements
   type: field_group
   config: {}
   fields:
@@ -193,21 +90,31 @@ fields:
       config:
         required: false
       label: Title
-    - name: event
+    - name: description
       type: text
       config:
         required: false
-      label: Event
+      label: Description
+    - name: date
+      type: text
+      config:
+        required: false
+      label: Date
     - name: image
       type: file
       config:
         maxSize: 64
       label: Image
+    - name: background
+      type: text
+      config:
+        required: false
+      label: Background
     config:
       min: 
       max: 
       labelField: 
     label: item
-  label: awards
+  label: Achievements
 pages:
 - data/homepage.yml
