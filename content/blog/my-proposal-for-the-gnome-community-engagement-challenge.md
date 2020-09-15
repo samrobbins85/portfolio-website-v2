@@ -5,6 +5,7 @@ image = ""
 title = "My Proposal for the GNOME Community Engagement Challenge"
 
 +++
+
 This document is submitted in addition to my proposal to provide further
 detail
 
@@ -26,8 +27,8 @@ section.
 With time, I hope to be able to expand this to a wide range of
 languages, but to start with I will focus on two categories
 
-* Python
-* Web Development: HTML, CSS, JavaScript
+- Python
+- Web Development: HTML, CSS, JavaScript
 
 While users could learn these languages on external sites such as
 codecademy, by having the tutorials integrated into the website it has
@@ -36,7 +37,7 @@ to do it. It also has the added benefit that these tutorials will
 contain all the information for the practice open source contributions
 which will be described later.
 
-![](https://res.cloudinary.com/samrobbins/image/upload/v1600161649/Desktop-1_xgu0vy.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161649/Desktop-1_xgu0vy.png "An example page for learning to code")
 
 ## Learning Open Source Techniques
 
@@ -49,20 +50,20 @@ instead of GitHub, such as GNOME and KDE.
 The initial concept for teaching Git will include the following ideas,
 but may increase as I start work
 
-* Why people use Git
-* `git init` for creating git repositories
-* `git add` and how git tracks files
-* `git commit` and how to write good commits
-* `git branch` and the concepts behind branches
-* `git push` for remote repositories, transitioning into the section
+- Why people use Git
+- `git init` for creating git repositories
+- `git add` and how git tracks files
+- `git commit` and how to write good commits
+- `git branch` and the concepts behind branches
+- `git push` for remote repositories, transitioning into the section
   on GitHub
 
 Then the section on GitHub will cover
 
-* Pull Requests
-* Issues
+- Pull Requests
+- Issues
 
-![](https://res.cloudinary.com/samrobbins/image/upload/v1600161665/Learn_to_Contribute_myj4de.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161665/Learn_to_Contribute_myj4de.png "An example page for learning to contribute")
 
 ## Practising Contribution to Purpose Made Repositories
 
@@ -78,7 +79,7 @@ a focus on the Open Source Techniques such as using Git. More
 complicated examples will also be available which would allow them to
 stretch their skill in the language.
 
-![](https://res.cloudinary.com/samrobbins/image/upload/v1600161681/Pratice_Contributing_ywanke.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161681/Pratice_Contributing_ywanke.png "An example page for practising contributing")
 
 ## Practising contribution to old versions of real repositories
 
@@ -91,7 +92,7 @@ accurate measure of the complexity of the task.
 Each of these tasks will link back to the tutorial pages so that if the
 user doesn’t understand how it works they can brush up on their skills
 
-![](https://res.cloudinary.com/samrobbins/image/upload/v1600161694/Real_Practice_Contributing_yhynhd.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161694/Real_Practice_Contributing_yhynhd.png "An example page for practising contributing to real repositories")
 
 ## Contributing to real repositories
 
@@ -99,20 +100,20 @@ The final step is to actually get contributing! This will make use of
 GitHub issues to provide the prompts for the user. This section will
 consist of different levels:
 
-* Good first issues in repositories they’ve already practised on
-* Other issues in repositories they’ve already practised on
-* Good first issues in repositories that use the same technologies
+- Good first issues in repositories they’ve already practised on
+- Other issues in repositories they’ve already practised on
+- Good first issues in repositories that use the same technologies
   they’ve practised on
-* Other issues issues in repositories that use the same technologies
+- Other issues issues in repositories that use the same technologies
   they’ve practised on
-* Good first issues from all around GitHub
+- Good first issues from all around GitHub
 
 This provides a simple progression ladder increasing in difficulty to
 ensure that users aren’t scared off by an issue they don’t know how to
 solve. This will also feature being able to favourite an issue so that
 you can easily access it to contribute, or to see how it gets resolved.
 
-![](https://res.cloudinary.com/samrobbins/image/upload/v1600161711/Real_Contributing_o4tuf5.png)
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161711/Real_Contributing_o4tuf5.png "An example page showing issues a user could help with")
 
 # Technology
 
@@ -123,13 +124,13 @@ audience.
 
 Nearly all the tools used to create this project are open source, and for those that are not fully open source, a considerable portion is.
 
-| Category | Name | Amount open source | Link |
-| --- | --- | --- | --- |
-| Hosting | Vercel | Considerable amount | https://github.com/vercel/vercel |
-| Backend Framework | Next.js | Entirely Open Source | https://github.com/vercel/next.js |
+| Category            | Name        | Amount open source   | Link                                       |
+| ------------------- | ----------- | -------------------- | ------------------------------------------ |
+| Hosting             | Vercel      | Considerable amount  | https://github.com/vercel/vercel           |
+| Backend Framework   | Next.js     | Entirely Open Source | https://github.com/vercel/next.js          |
 | Front end framework | TailwindCSS | Entirely Open Source | https://github.com/tailwindcss/tailwindcss |
-| Database | MongoDB | Entirely Open Source | https://github.com/mongodb |
-| Authentication | Auth0 | Considerable amount | https://github.com/auth0 |
+| Database            | MongoDB     | Entirely Open Source | https://github.com/mongodb                 |
+| Authentication      | Auth0       | Considerable amount  | https://github.com/auth0                   |
 
 This project will be usable without authentication. This allows the
 project to be kept entirely open source and means that there isn’t a
@@ -163,16 +164,16 @@ help with any problems.
 By November, I plan to have this project implemented without
 authentication, this will include:
 
-* Designing the website
-* Writing the tutorials
-* Finding suitable solved issues for users to try, and writing hints
-* Working with the GitHub API to find issues for users to help with
+- Designing the website
+- Writing the tutorials
+- Finding suitable solved issues for users to try, and writing hints
+- Working with the GitHub API to find issues for users to help with
 
 If I was to be selected to continue this to a final project
 authentication would then be implemented, along with all the user
 features that go with this:
 
-* Saving progress
-* Points system to show progress
-* Saving issues you’re interested in
-* Issues presented to you being customized based on your experience.
+- Saving progress
+- Points system to show progress
+- Saving issues you’re interested in
+- Issues presented to you being customized based on your experience.
