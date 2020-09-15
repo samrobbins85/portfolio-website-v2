@@ -1,7 +1,6 @@
 +++
 date = 2020-09-14T23:00:00Z
 description = "My Proposal that got me through the first round of the GNOME community engagement challenge"
-draft = true
 image = ""
 title = "My Proposal for the GNOME Community Engagement Challenge"
 
