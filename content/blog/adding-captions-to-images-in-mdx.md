@@ -1,7 +1,6 @@
 +++
 date = 2020-09-14T23:00:00Z
 description = "How to add a caption to an image using MDX"
-draft = true
 title = "Adding captions to images in MDX"
 
 +++
@@ -15,7 +14,7 @@ The first thing to do is to look at the [table of components](https://mdxjs.com/
 
 Yields the following items
 
-```json
+```js
 {
   type: 'image',
   url: 'https://example.com/favicon.ico',
