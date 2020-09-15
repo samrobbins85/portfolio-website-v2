@@ -9,9 +9,6 @@ fields:
   name: date
   label: date
 - type: text
-  name: image
-  label: image
-- type: text
   name: description
   label: description
 pages:
