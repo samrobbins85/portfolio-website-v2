@@ -121,8 +121,7 @@ audience.
 
 ## Open Source
 
-Nearly all the tools used to create this project are open source, and
-for those that are not fully open source, a considerable portion is.\\
+Nearly all the tools used to create this project are open source, and for those that are not fully open source, a considerable portion is.
 
 | Category | Name | Amount open source | Link |
 | --- | --- | --- | --- |
