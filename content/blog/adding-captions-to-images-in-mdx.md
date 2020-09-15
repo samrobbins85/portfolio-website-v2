@@ -4,6 +4,7 @@ description = "How to add a caption to an image using MDX"
 title = "Adding captions to images in MDX"
 
 +++
+
 Using [MDX](https://mdxjs.com/) you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
 
 The first thing to do is to look at the [table of components](https://mdxjs.com/table-of-components) for MDX, and here we can see that images are represented by `img`. By following the link we can see the markdown
@@ -27,28 +28,18 @@ To adapt this component, we are going to use `title` as the caption.
 
 Then we create a React component, where each of the keys are passed inside props
 
-```js
+```jsx
 function MyImg(props) {
-	if (props.title !== undefined) {
-		return (
-			<figure>
-				<img
-					src={props.src}
-					alt={props.alt}
-				/>
-				<figcaption>
-					{props.title}
-				</figcaption>
-			</figure>
-		);
-	} else {
-		return (
-			<img
-				src={props.src}
-				alt={props.alt}
-			/>
-		);
-	}
+  if (props.title !== undefined) {
+    return (
+      <figure>
+        <img src={props.src} alt={props.alt} />
+        <figcaption>{props.title}</figcaption>
+      </figure>
+    );
+  } else {
+    return <img src={props.src} alt={props.alt} />;
+  }
 }
 ```
 
