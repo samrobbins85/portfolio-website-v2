@@ -53,6 +53,11 @@ fields:
     max: 
     labelField: 
   label: Tech
+- name: site
+  type: text
+  config:
+    required: false
+  label: Site
 pages:
 - content/blog/expanding-the-next.js-blog-example-to-use-mdx.md
 - content/blog/hugo-versions-in-hosting.md
