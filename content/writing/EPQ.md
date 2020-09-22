@@ -43,7 +43,7 @@ Classical computers work using transistors, these are in effect
 electronic switches which will either permit or deny current through
 them based on the current in the third leg.
 
-![npn Transistor](https://res.cloudinary.com/samrobbins/image/upload/v1600785629/2020-09-22_15-40_aiw6kl.png "NPN Transistor")
+![npn Transistor](https://res.cloudinary.com/samrobbins/image/upload/v1600791424/NPN_Transistor_awgvah.svg "NPN Transistor")
 
 In this diagram the electrons are collected at the collector (C) and
 then taken into the N doped silicon. When electrons are provided to the
@@ -57,18 +57,18 @@ Transistors can be arranged in many ways to produce logic gates. These
 are then used in various combinations to perform the mathematical
 operations that are used in classical algorithms.
 
-![not Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600785708/2020-09-22_15-40_1_hzwsjm.png "NOT gate")
+![not Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600791837/NOT_i3rxov.svg "NOT gate")
 
 Above is shown the NOT gate, constructed from transistors, the input, X,
 will be inverted to Y.
 
-![AND Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600785708/2020-09-22_15-40_2_bxgyjx.png "AND Gate")
+![AND Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600791837/AND_i9hrmo.svg "AND Gate")
 
 Above is the AND gate, this requires both X and Y to be on, in order for
 Z to be on. This is because when X is on it will provide current for
 Transistor 2, which will only transmit if Y is on.
 
-![OR Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600785708/2020-09-22_15-41_whqvvo.png "OR Gate")
+![OR Gate](https://res.cloudinary.com/samrobbins/image/upload/v1600791837/OR_kyl0vd.svg "OR Gate")
 
 Above is the OR gate, the collectors of the transistors are connected to
 the + node, so that whenever the base (X or Y) receives an input, it
