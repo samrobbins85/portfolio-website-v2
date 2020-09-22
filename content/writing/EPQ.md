@@ -276,7 +276,7 @@ computer.
 One set of quantum gates are the Pauli Operators [^pauli], the Pauli X
 operator is shown by the 2$\times$2 matrix:
 
-$$\begin{bmatrix} a & b \\\\ c & d\end{bmatrix}$$
+$$\begin{bmatrix} 0 & 1 \\\\ 1 & 0\end{bmatrix}$$
 
 [^pauli]: Weisstein, E. 2002. Pauli Matrices. MathWorld–A Wolfram Web Resource.
 
