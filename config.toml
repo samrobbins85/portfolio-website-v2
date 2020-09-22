@@ -19,6 +19,8 @@ author = "Sam Robbins"
   [markup.goldmark]
       [markup.goldmark.extensions]
         footnote = true
+      [markup.goldmark.renderer]
+       unsafe = true
   [markup.highlight]
     codeFences = true
     guessSyntax = false

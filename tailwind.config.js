@@ -35,6 +35,14 @@ module.exports = {
               "&:after": { content: "none !important" },
             },
           },
+          p: {
+            "&::before": {
+              content: "none !important",
+            },
+            "&::after": {
+              content: "none !important",
+            },
+          },
         },
       },
     },
