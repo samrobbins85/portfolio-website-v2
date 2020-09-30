@@ -36,9 +36,12 @@ url = "https://www.algolia.com/"
 logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598976828/github_hkr2ql.svg"
 name = "GitHub"
 url = "https://github.com/"
+[[tech]]
+logo = "https://res.cloudinary.com/samrobbins/image/upload/v1601460195/kroki_bhdzzy.svg"
+name = "Kroki"
+url = "https://kroki.io/"
 
 +++
-
 This site was built to replace my [existing university notes](https://github.com/samrobbins85/university-notes). I wanted to do this as the PDFs produced by LaTeX weren't as accessible as I wanted them to be, such as not being easy to read on mobile devices. Another benefit that moving to a website brings is that I have the opportunity to include interactive elements.
 
 ## Content format
@@ -65,14 +68,6 @@ One drawback of this is that the content passed to the component no longer gets 
 
 There is a bit of a nasty problem with compoinents though in that the content passed in as the child of a component gets formatted before being passed through, leading to problems with backslashes being removed as they are seen as escape characters. I have to use `String.raw` on the component side whenever passing through LaTeX, which is a bit of a pain.
 
-## MDX processing
-
-Finding the best solution for processing MDX was quite a complicated task due to wanting to have a sidebar on all pages. The problem was that the sidebar is dynamically generated from the input files, and so needed props from the build step, which can use Node.js functions such as `fs`. The implementation of MDX in Next.js doesn't allow this as it just converts MDX into pages along with that content from the build step fetched through `getStaticProps` can only be used in pages, not components.
-
-My solution to this laid in creating a custom MDX implementation, as documented [here](https://mdxjs.com/getting-started#do-it-yourself). I then used an [optional catch all route](https://nextjs.org/docs/routing/dynamic-routes#optional-catch-all-routes) for all the pages, which made a request through `getStaticProps` for the page content. I used the `directory-tree` NPM package to generate all the valid paths for `getStaticPaths`.
-
-This solution was also the fastest solution by a considerable margin, more than halving the build time compared to the solution with the MDX plugin. The one downside of this solution is that in the dev server `getStaticProps` is only run on page load, so I don't get live preview of the content I'm typing, but VS code extensions make up for this.
-
 ## Styling
 
 All the styling is handled through [Tailwind CSS](https://tailwindcss.com/), this was my first time using the typography plugin, and I was hugely impressed. It saved me a lot of time in ensuring the main content was nicely styled. There was some issues with my React components, as the plugin was also styling those, but I managed to make the components look ok regardless.
@@ -94,3 +89,37 @@ The setup for this was relatively easy as the [Algolia documentation](https://do
 ## Sitemap
 
 As I mentioned above, I needed to generate a sitemap for Algolia search, this also has a benefit in providing better SEO as the Google crawler can also access the pages easier with a sitemap. However generating one of these was somewhat tricky due to the fact I am using catch all routes, so it isn't apparent from the source code what the paths will be. The best solution I found was to use `nextjs-sitemap-generator` and passing it my MDX content directory as my pages directory, which gives it all the content pages. Sadly this does mean it doesn't show the index page, but that hasn't been a problem yet.
+
+## Diagrams
+
+This site allows for custom diagrams from both mermaid js and all the providers on Kroki, although only graphviz is implemented from Kroki.
+
+The solution to this was by using the feature of MDX to [overwrite components](https://mdxjs.com/getting-started/#mdxprovider), I used this to overwrite both the `pre` and `code` components.
+
+The pre component was simple, the only reason I needed to overwrite it was that `pre` components were styled by `tailwind-typography` and so using a `div` was more appropriate.
+
+The real code lies in the `code` component. First I worked with the mermaid API. This was simple as it just required the string to be base 64 encoded, so I used the `base-64` npm package and appended it to the link.
+
+```js
+var result = base64.encode(props.children);
+return <img src={"https://mermaid.ink/img/" + result} />;
+```
+
+Kroki was more complicated as it required 4 steps:
+
+1. UTF8 encode the string
+2. Compress the string
+3. Base 64 encode the string
+4. Replace any symbols that would cause issue with the URL with dashes
+
+For UTF-8 encoding I just used the `uft8` package, but the compression required the `pako` package, but it all worked out fairly simply
+
+```js
+var bytes = utf8.encode(props.children);
+const compressed = pako.deflate(bytes, { level: 9, to: "string" });
+var result = base64
+  .encode(compressed)
+  .replace(/\+/g, "-")
+  .replace(/\//g, "_");
+return <img src={"https://kroki.io/graphviz/svg/" + result} />;
+```
