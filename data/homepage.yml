@@ -1,80 +1,92 @@
 ---
 social:
-  twitter: ''
+  twitter: ""
   linkedin: sam-robbins-gb
   github: samrobbins85
-  gitlab: ''
-  facebook: ''
-  instagram: ''
+  gitlab: ""
+  facebook: ""
+  instagram: ""
   gmail: samrobbinsgb
 portfolio:
   enable: true
   item:
-  - title: DNS Comparison Website
-    company: Global Cyber Alliance
-    date: "2020"
-    image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599472461/homepage_urjka3.png
-    description: A website to compare the performance of major DNS providers when
-      it comes to blocking criminal domains
-    link: "/portfolio/dns-comparison-website/"
-    tools:
-    - https://cdn.svgporn.com/logos/nextjs.svg
-    - https://cdn.svgporn.com/logos/tailwindcss-icon.svg
-    - https://www.chartjs.org/img/chartjs-logo.svg
-  - title: Notes Site
-    company: Personal Project
-    date: "2020"
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1599577588/Screenshot_2020-09-08_Sam_s_Notes_wtle85.png
-    description: A website to store all of my University notes
-    link: "/portfolio/notes-website/"
-    tools:
-    - https://cdn.svgporn.com/logos/nextjs.svg
-    - https://cdn.svgporn.com/logos/tailwindcss-icon.svg
-    - https://cdn.svgporn.com/logos/mdx.svg
-    - https://cdn.svgporn.com/logos/algolia.svg
-    - https://cdn.svgporn.com/logos/github-octocat.svg
-  - title: Hugo Developer Portfolio
-    company: Personal Project
-    date: "2019"
-    image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591885280/screenshot_aexm2m.png
-    description: A portfolio website, including a blog
-    link: "/portfolio/notes-website/"
-    tools:
-    - https://cdn.svgporn.com/logos/hugo.svg
-    - https://cdn.svgporn.com/logos/uikit.svg
-    - https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593603175/forestry-pos-full_lid6rs.svg
+    - title: DNS Comparison Website
+      company: Global Cyber Alliance
+      date: "2020"
+      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599472461/homepage_urjka3.png
+      description:
+        A website to compare the performance of major DNS providers when
+        it comes to blocking criminal domains
+      link: "/portfolio/dns-comparison-website/"
+      tools:
+        - name: Next.js
+          image: https://cdn.svgporn.com/logos/nextjs.svg
+        - name: Tailwind CSS
+          image: https://cdn.svgporn.com/logos/tailwindcss-icon.svg
+        - name: Chart.js
+          image: https://www.chartjs.org/img/chartjs-logo.svg
+    - title: Notes Site
+      company: Personal Project
+      date: "2020"
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1599577588/Screenshot_2020-09-08_Sam_s_Notes_wtle85.png
+      description: A website to store all of my University notes
+      link: "/portfolio/notes-website/"
+      tools:
+        - name: Next.js
+          image: https://cdn.svgporn.com/logos/nextjs.svg
+        - name: Tailwind CSS
+          image: https://cdn.svgporn.com/logos/tailwindcss-icon.svg
+        - name: MDX
+          image: https://cdn.svgporn.com/logos/mdx.svg
+        - name: Algolia
+          image: https://cdn.svgporn.com/logos/algolia.svg
+        - name: GitHub
+          image: https://cdn.svgporn.com/logos/github-octocat.svg
+    - title: Hugo Developer Portfolio
+      company: Personal Project
+      date: "2019"
+      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591885280/screenshot_aexm2m.png
+      description: A portfolio website, including a blog
+      link: "/portfolio/notes-website/"
+      tools:
+        - name: Hugo
+          image: https://cdn.svgporn.com/logos/hugo.svg
+        - name: UIKit
+          image: https://cdn.svgporn.com/logos/uikit.svg
+        - name: Forestry
+          image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593603175/forestry-pos-full_lid6rs.svg
 achievements:
   enable: true
   item:
-  - title: Auth0 Hackathon
-    description: 3rd Place Security
-    date: July 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793268/logos/logos_auth0_ruvdmp.svg
-    background: bg-orange-100
-  - title: GNOME Community Engagement Challenge
-    description: Phase 1 Winner
-    date: July 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/CEChallenge_wdgqc9.webp
-    background: bg-blue-100
-  - title: Microsoft Certification
-    description: Azure Fundamentals
-    date: June 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1592501459/microsoft-certified-fundamentals-badge_cpcgyn.svg
-    background: bg-blue-100
-  - title: Oxford Digithon
-    description: Most Creative Hack
-    date: June 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
-    background: bg-yellow-100
-  - title: Durhack 2019
-    description: Finalists and best use of MongoDB
-    date: November 2019
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1595701216/logo19_dodnkk.svg
-    background: bg-purple-100
-  - title: Durhack 2018
-    description: Funniest Hack
-    date: November 2018
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/DH18_frqbun.webp
-    background: bg-purple-100
+    - title: Auth0 Hackathon
+      description: 3rd Place Security
+      date: July 2020
+      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793268/logos/logos_auth0_ruvdmp.svg
+      background: bg-orange-100
+    - title: GNOME Community Engagement Challenge
+      description: Phase 1 Winner
+      date: July 2020
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/CEChallenge_wdgqc9.webp
+      background: bg-blue-100
+    - title: Microsoft Certification
+      description: Azure Fundamentals
+      date: June 2020
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1592501459/microsoft-certified-fundamentals-badge_cpcgyn.svg
+      background: bg-blue-100
+    - title: Oxford Digithon
+      description: Most Creative Hack
+      date: June 2020
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
+      background: bg-yellow-100
+    - title: Durhack 2019
+      description: Finalists and best use of MongoDB
+      date: November 2019
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1595701216/logo19_dodnkk.svg
+      background: bg-purple-100
+    - title: Durhack 2018
+      description: Funniest Hack
+      date: November 2018
+      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/DH18_frqbun.webp
+      background: bg-purple-100
 banner:
-  title: ''
+  title: ""
