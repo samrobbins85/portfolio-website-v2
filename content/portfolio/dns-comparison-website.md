@@ -39,6 +39,10 @@ url = "https://www.cloudflare.com/dns/"
 logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385236/google_j1hisv.svg"
 name = "Google DNS"
 url = "https://developers.google.com/speed/public-dns"
+[[tech]]
+logo = "https://res.cloudinary.com/samrobbins/image/upload/v1601462140/papaparse_gc0fgl.png"
+name = "Papa Parse"
+url = "https://www.papaparse.com/"
 
 +++
 This site compares the performance of different DNS services. It does this in a range of ways, depending on your requirements.

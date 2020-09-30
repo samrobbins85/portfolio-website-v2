@@ -59,12 +59,12 @@ fields:
     required: false
   label: Site
 pages:
-- content/blog/expanding-the-next.js-blog-example-to-use-mdx.md
 - content/blog/hugo-versions-in-hosting.md
 - content/portfolio/DurHack 2019.md
 - content/portfolio/algorithms-and-data-structures.md
 - content/portfolio/bioinformatics.md
 - content/portfolio/cv-theme.md
+- content/portfolio/dns-comparison-website.md
 - content/portfolio/easy-dmarc.md
 - content/portfolio/error-correcting-codes.md
 - content/portfolio/google-aiy-emotion-detection.md
