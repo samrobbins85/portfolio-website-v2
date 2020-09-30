@@ -54,7 +54,7 @@ achievements:
   - title: GNOME Community Engagement Challenge
     description: Phase 1 Winner
     date: July 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1595701167/CEChallenge-P1Winner2_iyjvyu.png
+    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/CEChallenge_wdgqc9.webp
     background: bg-blue-100
   - title: Microsoft Certification
     description: Azure Fundamentals
@@ -64,7 +64,7 @@ achievements:
   - title: Oxford Digithon
     description: Most Creative Hack
     date: June 2020
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1593352345/twoo-home_k7molq.png
+    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
     background: bg-yellow-100
   - title: Durhack 2019
     description: Finalists and best use of MongoDB
@@ -74,7 +74,7 @@ achievements:
   - title: Durhack 2018
     description: Funniest Hack
     date: November 2018
-    image: https://res.cloudinary.com/samrobbins/image/upload/v1595701213/br43jbo9tsbklzuqh8uu_svd0f3.png
+    image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/DH18_frqbun.webp
     background: bg-purple-100
 banner:
   title: ''
