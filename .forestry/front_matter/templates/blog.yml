@@ -13,5 +13,4 @@ fields:
   label: description
 pages:
 - content/blog/adding-captions-to-images-in-mdx.md
-- content/blog/my-proposal-for-the-gnome-community-engagement-challenge.md
 - content/blog/rendering-markdown-in-react-components.md
