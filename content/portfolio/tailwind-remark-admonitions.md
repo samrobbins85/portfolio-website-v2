@@ -3,10 +3,10 @@ categories = ["web-dev"]
 coders = []
 date = 2020-08-17T23:00:00Z
 description = "Alternate styling for remark admonitions"
-github = ["https://github.com/samrobbins85/tailwind-remark-admonitions"]
+github = ["https://github.com/samrobbins85/remark-admonitions-styles"]
 image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598877402/admonition_tkwgpn.png"
 site = "https://tw-remark-admonitions.vercel.app/"
-title = "Tailwind Remark Admonitions"
+title = "Remark Admonitions Styles"
 [[tech]]
 logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140224/tailwindcss_rnpshz.svg"
 name = "Tailwind CSS"
