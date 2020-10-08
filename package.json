@@ -8,7 +8,7 @@
     "prettier": "^2.1.2",
     "prettier-plugin-go-template": "0.0.10",
     "prettier-plugin-package": "^1.1.0",
-    "tailwindcss": "^1.8.11"
+    "tailwindcss": "^1.8.12"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
