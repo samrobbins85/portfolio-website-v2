@@ -3,7 +3,7 @@ categories = ["web-dev"]
 coders = []
 date = 2020-08-30T23:00:00Z
 description = "A website to store my university notes"
-github = ["https://github.com/samrobbins85/notes-site"]
+github = ["https://github.com/samrobbins85/notes-site", "https://github.com/samrobbins85/notes-og-image"]
 image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867672/android-chrome-512x512_mtqwtx.png"
 site = "https://csnotes.me"
 title = "Notes Website"
@@ -123,3 +123,17 @@ var result = base64
   .replace(/\//g, "_");
 return <img src={"https://kroki.io/graphviz/svg/" + result} />;
 ```
+
+# Open Graph Images
+
+I wanted to generate open graph images as they look good to have, and that when I was posting links to the site, Facebook was taking a random image from the site and using that as the open graph image.
+
+The starting point for this was [og-image](https://github.com/vercel/og-image) by Vercel. This allows you to generate an image for the open graph protocol by adding parameters in the URL. However this needed some tweaking as the default version includes images of Vercel products, which I did not want, and only allowed for one line of text, where I wanted two.
+
+Making these changes were fairly simple. When it came to removing the image, it was just a case of removing everything with the `image` variable. Typescript was of benefit here as more warnings were presented when incorrect variable types were passed.
+
+Adding the second line of text was slightly more complex as I had to decide on how this information would be included in the URL. As the original method used a subdirectory, I decided to add a second for the second line, so the URL would look like. `example.com/first_line/second_line`. This was a simple case of splitting the variable used for the line of text on slashes and assinging one to each line. I also included a simple if statement to check if the second instance was undefined, in which case it wouldn't be presented.
+
+Finally I wanted to have the second line of text be smaller, as a kind of subheading. The original application gives the option for setting font size, and I wanted to keep that. I considered allowing for the setting of two font sizes, but given I was always going to want the second line smaller I decided against it. Instead I set that font size on the parent element of both lines of text, then used font sizes as a percentage to make the second line smaller.
+
+I then needed to integrate this into my website. Getting this hosted was very simple, following the instructions in the original repository I got it hosted on the `og` subdomain of my site. Then I added them into my pages. For the homepage, I set the URL manually as the homepage just generates the one page. Then for the slug, which generates every other page, I needed to use a more complex method. I was already using the routes to generate text for the title of the pages, so I used this code to get my first line. The second line was slightly more complex as I couldn't just use the other parameter of the route as not all pages had two parameters. Instead I did a check of the length of the route and if it was long enough, used the second parameter, if not, I used "Sam's Notes". This required one final tweak as the url generated had spaces in, as my title did, so I had to use the `escape()` function in JavaScript for social sites to be able to process the URL
