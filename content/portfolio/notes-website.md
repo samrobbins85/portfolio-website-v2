@@ -136,4 +136,28 @@ Adding the second line of text was slightly more complex as I had to decide on h
 
 Finally I wanted to have the second line of text be smaller, as a kind of subheading. The original application gives the option for setting font size, and I wanted to keep that. I considered allowing for the setting of two font sizes, but given I was always going to want the second line smaller I decided against it. Instead I set that font size on the parent element of both lines of text, then used font sizes as a percentage to make the second line smaller.
 
-I then needed to integrate this into my website. Getting this hosted was very simple, following the instructions in the original repository I got it hosted on the `og` subdomain of my site. Then I added them into my pages. For the homepage, I set the URL manually as the homepage just generates the one page. Then for the slug, which generates every other page, I needed to use a more complex method. I was already using the routes to generate text for the title of the pages, so I used this code to get my first line. The second line was slightly more complex as I couldn't just use the other parameter of the route as not all pages had two parameters. Instead I did a check of the length of the route and if it was long enough, used the second parameter, if not, I used "Sam's Notes". This required one final tweak as the url generated had spaces in, as my title did, so I had to use the `escape()` function in JavaScript for social sites to be able to process the URL
+I then needed to integrate this into my website. Getting this hosted was very simple, following the instructions in the original repository I got it hosted on the `og` subdomain of my site. Then I added them into my pages. For the homepage, I set the URL manually as the homepage just generates the one page. Then for the slug, which generates every other page, I needed to use a more complex method. I was already using the routes to generate text for the title of the pages, so I used this code to get my first line. The second line was slightly more complex as I couldn't just use the other parameter of the route as not all pages had two parameters. Instead I did a check of the length of the route and if it was long enough, used the second parameter, if not, I used "Sam's Notes". This required one final tweak as the URL generated had spaces in, as my title did, so I had to use the `escape()` function in JavaScript for social sites to be able to process the URL.
+
+# Exercise section
+
+I wanted to add a section for exercises, deciding on how this should be implemented was somewhat complex. One way to implement this would for each lecture to be a folder and contain the notes and exercises. However this would involve rewriting much of the code for detecting lectures and would cause additional complexity due to my requirement for lectures to optionally have submodules.
+
+What I settled on was a different file extension `.exercise.md`, instead of `.md`. This did have the additional complication of requiring the filename for both the notes and exercises to be the same, but this wasn't too much of a problem.
+
+The next decision was on how these would be presented, I settled on it being a tab of the page and being generated with React, rather than being a separate page as it was easier to implement. However it is probably better for performance for them to be separate pages.
+
+Up next was the implementation of the exercise component, I decided that I wanted it to be implemented in the following way
+
+```react
+<Exercise>
+<Question>
+Question text here
+</Question>
+<Answer>
+Answer text here
+</Answer>
+</Exercise>
+```
+
+This allows for each section to be clear and will allow for MDX to convert the text to markdown prior to sending through. In order to implement this, I needed to inspect `props.children` passed to `Exercise` to find the two components. `props.children` is passed through as a list, with an item for each component passed in, and these items were objects, with the key `props.originalType.name` being "Question" and "Answer" for each component. I used the `filter` method in JavaScript to isolate these components to split them into the correct sections. If only one component is passed in, an object is returned for that component, rather than a list, so I check the length initially, and just render the child if there is a single child. This allows for just presenting the question, if I have not yet worked out the answer. 
+
