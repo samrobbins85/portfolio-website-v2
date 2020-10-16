@@ -5,6 +5,11 @@ cv:
 experience:
   enable: true
   item:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1602834735/gitkraken_uvtvol.svg
+    title: Ambassador
+    company: GitKraken
+    duration: October 2020 - Present
+    background: bg-teal-100
   - logo: https://res.cloudinary.com/samrobbins/image/upload/v1591793268/logos/logos_Durham_fc2sae.svg
     title: Teaching Assistant
     company: Durham University
