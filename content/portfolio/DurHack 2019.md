@@ -1,7 +1,7 @@
 ---
 title: Durhack 2019
 date: 2020-01-01T15:19:11.000+00:00
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592764375/logo19_feyze9.svg
+image: https://res.cloudinary.com/samrobbins/image/upload/v1601719076/dh19_dfcja5.svg
 categories:
 - web-dev
 - hackathon
@@ -27,6 +27,7 @@ tech:
 - name: Twilio
   logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368747/twilio-2_rqhhfg.svg
   url: https://www.twilio.com/
+site: ''
 
 ---
 ![](https://res.cloudinary.com/samrobbins/image/upload/v1591793300/images/portfolio/images_portfolio_durhack2019_pyn6xr.png)
