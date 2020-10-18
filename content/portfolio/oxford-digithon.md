@@ -4,7 +4,8 @@ coders = ["samrobbins85", "karina-talibzhanova"]
 date = 2020-05-30T23:00:00Z
 description = "A Firefox Browser Extension"
 github = ["https://github.com/karina-talibzhanova/oxfordhack2020"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593352345/twoo-home_k7molq.png"
+image = "https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp"
+site = ""
 title = "Oxford Digithon"
 type = ""
 [[tech]]
