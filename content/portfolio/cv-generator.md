@@ -3,10 +3,9 @@ categories = ["web-dev", "hackathon"]
 coders = []
 date = 2020-11-01T00:00:00Z
 description = "A website to generate CVs"
-draft = true
 github = ["https://github.com/samrobbins85/cv-generator"]
 image = "https://res.cloudinary.com/samrobbins/image/upload/v1604328156/undraw_Resume_folder_re_e0bi_flm8uj.svg"
-site = "https://cvgen.vercel.app/login"
+site = "https://cvgen.vercel.app"
 title = "CV Generator"
 [[tech]]
 logo = "https://res.cloudinary.com/samrobbins/image/upload/v1597140056/next-black_csivx6.svg"
