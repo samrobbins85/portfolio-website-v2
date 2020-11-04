@@ -2,8 +2,8 @@
 categories = ["web-dev"]
 coders = []
 date = 2020-08-30T23:00:00Z
-description = "A website to store my university notes"
-github = ["https://github.com/samrobbins85/notes-site", "https://github.com/samrobbins85/notes-og-image"]
+description = "A website to store my notes"
+github = ["https://github.com/samrobbins85/general-notes", "https://github.com/samrobbins85/notes-og-image"]
 image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867672/android-chrome-512x512_mtqwtx.png"
 site = "https://csnotes.me"
 title = "Notes Website"
@@ -42,8 +42,6 @@ name = "Kroki"
 url = "https://kroki.io/"
 
 +++
-This site was built to replace my [existing university notes](https://github.com/samrobbins85/university-notes). I wanted to do this as the PDFs produced by LaTeX weren't as accessible as I wanted them to be, such as not being easy to read on mobile devices. Another benefit that moving to a website brings is that I have the opportunity to include interactive elements.
-
 ## Content format
 
 The format I chose for the content is [MDX](https://mdxjs.com/), I had heard good things about it, and used it a bit when contributing to the Vercel documentation. It allows me to use standard markdown syntax but also allows for adding in JSX components. Another benefit is that it uses Remark and Rehype for markdown processing, allowing for the use of the wide range of plugins.
@@ -159,5 +157,4 @@ Answer text here
 </Exercise>
 ```
 
-This allows for each section to be clear and will allow for MDX to convert the text to markdown prior to sending through. In order to implement this, I needed to inspect `props.children` passed to `Exercise` to find the two components. `props.children` is passed through as a list, with an item for each component passed in, and these items were objects, with the key `props.originalType.name` being "Question" and "Answer" for each component. I used the `filter` method in JavaScript to isolate these components to split them into the correct sections. If only one component is passed in, an object is returned for that component, rather than a list, so I check the length initially, and just render the child if there is a single child. This allows for just presenting the question, if I have not yet worked out the answer. 
-
+This allows for each section to be clear and will allow for MDX to convert the text to markdown prior to sending through. In order to implement this, I needed to inspect `props.children` passed to `Exercise` to find the two components. `props.children` is passed through as a list, with an item for each component passed in, and these items were objects, with the key `props.originalType.name` being "Question" and "Answer" for each component. I used the `filter` method in JavaScript to isolate these components to split them into the correct sections. If only one component is passed in, an object is returned for that component, rather than a list, so I check the length initially, and just render the child if there is a single child. This allows for just presenting the question, if I have not yet worked out the answer.
