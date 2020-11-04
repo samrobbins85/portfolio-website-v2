@@ -1,3 +1,10 @@
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, "$1")
+    .replace(/\.0$/, "");
+const rem = (px) => `${round(px / 16)}rem`;
+const em = (px, base) => `${round(px / base)}em`;
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -28,25 +35,30 @@ module.exports = {
       8: "2rem",
       16: "4rem",
     },
-    typography: {
+    typography: (theme) => ({
       default: {
         css: {
-          pre: {
-            code: {
-              "&:after": { content: "none !important" },
-            },
+          "code::after": {
+            content: "none",
           },
-          p: {
-            "&::before": {
-              content: "none !important",
-            },
-            "&::after": {
-              content: "none !important",
-            },
+          "code::before": {
+            content: "none",
+          },
+          "pre code::after": {
+            content: "none",
+          },
+          code: {
+            backgroundColor: theme("colors.gray.200"),
+            color: theme("colors.gray.700"),
+            padding: "4px",
+            borderRadius: rem(2),
+          },
+          blockquote: {
+            quotes: "none",
           },
         },
       },
-    },
+    }),
   },
   variants: {
     display: ["responsive", "group-hover"],
