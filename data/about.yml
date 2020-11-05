@@ -38,6 +38,10 @@ experience:
 hackathons:
   enable: true
   item:
+  - title: Magic Hackathon
+    description: CV Generator
+    image: https://res.cloudinary.com/samrobbins/image/upload/v1604604668/Magic_Hackathon_j7znr7.svg
+    url: "/portfolio/cv-generator/"
   - title: Auth0 Hackathon
     description: Easy DMARC
     image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597044247/g12_vlt55w.png
