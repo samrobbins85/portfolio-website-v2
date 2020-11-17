@@ -85,16 +85,16 @@ fields:
   - name: item
     type: field_group_list
     fields:
-    - name: title
+    - name: event
       type: text
       config:
         required: false
-      label: Title
-    - name: description
+      label: Event
+    - name: award
       type: text
       config:
         required: false
-      label: Description
+      label: Award
     - name: date
       type: text
       config:
