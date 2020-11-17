@@ -1,7 +1,11 @@
 {
   "scripts": {
-    "build": "hugo",
+    "build": "hugo --minify",
     "dev": "hugo server -D"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
+    "postcss-preset-env": "^6.7.0"
   },
   "devDependencies": {
     "postcss-cli": "^7.1.2",
@@ -9,9 +13,5 @@
     "prettier-plugin-go-template": "0.0.10",
     "prettier-plugin-package": "^1.2.0",
     "tailwindcss": "^1.9.0"
-  },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.2.0",
-    "postcss-preset-env": "^6.7.0"
   }
 }
