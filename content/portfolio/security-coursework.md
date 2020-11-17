@@ -4,7 +4,7 @@ coders = []
 date = 2019-12-06T00:00:00Z
 description = "Performing a Pentest and CTF on a Virtual Machine"
 github = ["https://github.com/samrobbins85/NS-Security-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598985945/undraw_safe_bnk7_dimo8p.svg"
+image = "https://res.cloudinary.com/samrobbins/image/upload/v1605615915/Security_ixezad.svg"
 site = ""
 title = "Security Coursework"
 [[tech]]
