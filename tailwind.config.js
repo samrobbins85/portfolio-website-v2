@@ -27,7 +27,7 @@ module.exports = {
       sans: ["Inter var", "Inter"],
     },
     borderWidth: {
-      default: "1px",
+      DEFAULT: "1px",
       0: "0",
       1: "0.25rem",
       2: "0.5rem",
