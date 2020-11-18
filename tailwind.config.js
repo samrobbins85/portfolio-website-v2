@@ -4,12 +4,8 @@ const round = (num) =>
     .replace(/(\.[0-9]+?)0+$/, "$1")
     .replace(/\.0$/, "");
 const rem = (px) => `${round(px / 16)}rem`;
-const em = (px, base) => `${round(px / base)}em`;
+const colors = require("tailwindcss/colors");
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
   purge: {
     content: [
       "./themes/tailwind-developer-website/layouts/**/*.html",
@@ -19,12 +15,19 @@ module.exports = {
     ],
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        teal: colors.teal,
+        cyan: colors.cyan,
+        orange: colors.orange,
+        gray: colors.gray,
+      },
+    },
     fontFamily: {
       sans: ["Inter var", "Inter"],
     },
     borderWidth: {
-      default: "1px",
+      DEFAULT: "1px",
       0: "0",
       1: "0.25rem",
       2: "0.5rem",
