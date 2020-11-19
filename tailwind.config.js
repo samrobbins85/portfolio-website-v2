@@ -6,6 +6,7 @@ const round = (num) =>
 const rem = (px) => `${round(px / 16)}rem`;
 const colors = require("tailwindcss/colors");
 module.exports = {
+  darkMode: "media",
   purge: {
     content: [
       "./themes/tailwind-developer-website/layouts/**/*.html",
@@ -21,6 +22,8 @@ module.exports = {
         cyan: colors.cyan,
         orange: colors.orange,
         gray: colors.gray,
+        "cool-gray": colors.coolGray,
+        "blue-gray": colors.blueGray,
       },
     },
     fontFamily: {
