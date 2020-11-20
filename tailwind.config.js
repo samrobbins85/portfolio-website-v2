@@ -21,6 +21,7 @@ module.exports = {
         cyan: colors.cyan,
         orange: colors.orange,
         gray: colors.gray,
+        "cool-gray": colors.coolGray,
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -43,10 +44,14 @@ module.exports = {
             blockquote: {
               quotes: "none",
             },
+            pre: {
+              backgroundColor: theme("colors.cool-gray.800"),
+            },
           },
         },
       }),
     },
+
     fontFamily: {
       sans: ["Inter var", "Inter"],
     },
