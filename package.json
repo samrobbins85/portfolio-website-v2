@@ -5,11 +5,11 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.0.2",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.1.7",
+    "postcss": "^8.1.8",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.0.1-compat"
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
     "postcss-cli": "^8.3.0",
