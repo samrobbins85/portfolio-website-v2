@@ -4,7 +4,7 @@ coders = []
 date = 2020-11-29T00:00:00Z
 description = "Test contrasting colours against the WCAG standards"
 github = ["https://github.com/samrobbins85/colour-a11y-for-tailwind"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1606660003/day71-designer-tool-essential_wc0kzx.svg"
+image = "https://res.cloudinary.com/samrobbins/image/upload/v1606661900/day71-designer-tool-essential_cazmpi.svg"
 site = "https://colour-a11y.vercel.app/"
 title = "Colour accessibility test for Tailwind CSS"
 [[tech]]
