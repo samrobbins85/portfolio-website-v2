@@ -13,3 +13,4 @@ fields:
   label: description
 pages:
 - content/blog/adding-captions-to-images-in-mdx.md
+- content/blog/publishing-a-react-component-library-with-tailwind-css.md
