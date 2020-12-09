@@ -1,9 +1,9 @@
-+++
-date = 2020-12-04T00:00:00Z
-description = "Making an NPM package for a React component library with Tailwind CSS"
-title = "Publishing a React component library with Tailwind CSS"
+---
+date: 2020-12-04T00:00:00.000Z
+description: Making an NPM package for a React component library with Tailwind CSS
+title: Publishing a React component library with Tailwind CSS
+---
 
-+++
 First you need to make an npm package, this can be done with `npm init` provided you have npm installed on your computer. For the name if you want a scoped package, e.g. `@samrobbins/package`, ensure that the package name follows that structure, otherwise, you can just go with `package`. Remember that these have to be unique, so check npm to ensure you're not overlapping. Also ensure that your `main` key is `output.js`, or if you want it to be something different, then substitute your different name when I use `output.js` further down in this file
 
 The first thing we need is a JavaScript bundler, for this I've chosen rollup, but you could do this with any of them. To install rollup, run
@@ -21,7 +21,7 @@ export default {
     file: "./output.js",
     format: "esm",
   },
-}
+};
 ```
 
 This takes the file `index.js` and creates a file `output.js`, with the format of ES Modules (`esm`).
@@ -39,8 +39,8 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-  }
-}
+  },
+};
 ```
 
 Then we can initialise Tailwind CSS
@@ -116,14 +116,13 @@ You can then specify the same kind of thing in `rollup.config.js` by adding thes
 external: ["react", "react-dom"],
 ```
 
-
 Next we want to generate the `index.js` file we referenced earlier. How specifically you export from your component files may change this, but for my example, I'm doing `export default` from all my component files. So for each component I have, I want to add a line that looks like this
 
 ```js
 export { default as Answer } from "./components/answer.js";
 ```
 
-This will reexport the default export as `Answer` from this file. 
+This will reexport the default export as `Answer` from this file.
 
 If you run `rollup -c` (`-c` specifying that you have a custom config) you should see that it builds to an `output.js` file. However if you look in here, you will see that the CSS is huge as Tailwind doesn't know if you're running locally or in production, and so assumes local and includes all the styles. You can quickly get around this by running
 
@@ -226,16 +225,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-        registry-url: 'https://registry.npmjs.org'
-    - run: npm install
-    - run: npm run-script build
-    - run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm install
+      - run: npm run-script build
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
 And that's it! Whenever you create a release, it'll be published

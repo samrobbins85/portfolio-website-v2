@@ -1,9 +1,8 @@
-+++
-date = 2020-09-14T23:00:00Z
-description = "How to add a caption to an image using MDX"
-title = "Adding captions to images in MDX"
-
-+++
+---
+date: 2020-09-14T23:00:00Z
+description: How to add a caption to an image using MDX
+title: Adding captions to images in MDX
+---
 
 Using [MDX](https://mdxjs.com/) you can overwrite the default components that are provided by markdown. In this blog I will use this to add captions to images.
 

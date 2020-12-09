@@ -1,14 +1,9 @@
-+++
-categories = []
-coders = []
-date = 2020-06-26T23:00:00Z
-description = "Issues when it comes to the versions of Hugo supplied by hosting"
-github = []
-image = ""
-title = "Hugo versions in hosting"
-type = ""
+---
+date: 2020-06-26T23:00:00.000Z
+description: Issues when it comes to the versions of Hugo supplied by hosting
+title: Hugo versions in hosting
+---
 
-+++
 I recently wanted to add some syntax highlighting to my Hugo theme, a simple enough task right? Hop over onto the Hugo documentation [here](https://gohugo.io/getting-started/configuration-markup#highlight) and change the config file. I then ran `hugo server` to check everything was working, and it was looking wonderful
 
 So what's the problem? I wanted to deploy it. I use Vercel hosting for all my projects, which is fantastic and as you will see, this is more an oversight on my part than their fault. I pushed the code to GitHub and checked the preview link, and no styling! Very confused, I try and deploy on Netlify, but I get exactly the same result.
