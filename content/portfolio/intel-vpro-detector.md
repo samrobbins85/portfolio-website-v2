@@ -7,7 +7,7 @@ description: A program to detect the presence of Intel vPro and the status of In
 github:
   - "https://github.com/samrobbins85/electron-intel-vpro"
   - "https://github.com/samrobbins85/intel-vpro-detector"
-image: https://res.cloudinary.com/samrobbins/image/upload/v1604743142/111-coding_pkbtya.svg
+image: /img/portfolio_cover/laptop.svg
 site: ""
 title: Intel vPro Detector
 type: ""

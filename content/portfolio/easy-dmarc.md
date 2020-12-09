@@ -9,7 +9,7 @@ date: 2020-08-08T23:00:00.000Z
 description: A tool to make setting up DMARC on Vercel Easy
 github:
   - "https://github.com/samrobbins85/easy-dmarc"
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597139963/Logo_GCA_DMARC-removebg-preview_qjgl3w.png
+image: /img/long_logos/dmarc.png
 title: Easy DMARC
 type: ""
 tech:

@@ -14,7 +14,7 @@ portfolio:
     - title: DNS Comparison Website
       company: Global Cyber Alliance
       date: "2020"
-      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599472461/homepage_urjka3.png
+      image: /img/screenshots/dns.png
       description:
         A website to compare the performance of major DNS providers when
         it comes to blocking criminal domains
@@ -29,7 +29,7 @@ portfolio:
     - title: Notes Site
       company: Personal Project
       date: "2020"
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1599577588/Screenshot_2020-09-08_Sam_s_Notes_wtle85.png
+      image: /img/screenshots/notes.png
       description: A website to store all of my University notes
       link: "/portfolio/notes-website/"
       tools:
@@ -46,7 +46,7 @@ portfolio:
     - title: Hugo Developer Portfolio
       company: Personal Project
       date: "2019"
-      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591885280/screenshot_aexm2m.png
+      image: /img/screenshots/portfolio.png
       description: A portfolio website, including a blog
       link: "/portfolio/notes-website/"
       tools:

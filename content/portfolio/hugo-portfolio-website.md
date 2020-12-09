@@ -7,7 +7,7 @@ description: A portfolio website made with Hugo
 github:
   - "https://github.com/samrobbins85/hugo-developer-portfolio"
   - "https://github.com/samrobbins85/portfolio-website"
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_hugo_h2xbne.svg
+image: /img/logos/hugo.svg
 title: Hugo Portfolio Website
 type: post
 tech:

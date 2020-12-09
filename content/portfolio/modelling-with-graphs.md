@@ -6,7 +6,7 @@ coders: []
 date: 2019-03-08T00:00:00.000Z
 description: A set of algorithms on graphs
 github: []
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593526237/6n-graf_wahdu7.svg
+image: /img/portfolio_cover/graph.svg
 title: Modelling with Graphs
 type: ""
 tech:

@@ -6,7 +6,7 @@ coders: []
 date: 2019-02-15T00:00:00.000Z
 description: Implementing a range of algorithms for error correcting codes
 github: []
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531664/Hamming_distance_3_bit_binary_bxipcz.svg
+image: /img/portfolio_cover/hamming.svg
 title: Error Correcting Codes
 type: ""
 tech:
