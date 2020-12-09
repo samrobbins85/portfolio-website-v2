@@ -21,11 +21,11 @@ portfolio:
       link: "/portfolio/dns-comparison-website/"
       tools:
         - name: Next.js
-          image: https://cdn.svgporn.com/logos/nextjs.svg
+          image: /img/logos/nextjs.svg
         - name: Tailwind CSS
-          image: https://cdn.svgporn.com/logos/tailwindcss-icon.svg
+          image: /img/logos/tailwindcss.svg
         - name: Chart.js
-          image: https://www.chartjs.org/img/chartjs-logo.svg
+          image: /img/logos/chartjs.svg
     - title: Notes Site
       company: Personal Project
       date: "2020"
@@ -34,15 +34,15 @@ portfolio:
       link: "/portfolio/notes-website/"
       tools:
         - name: Next.js
-          image: https://cdn.svgporn.com/logos/nextjs.svg
+          image: /img/logos/nextjs.svg
         - name: Tailwind CSS
-          image: https://cdn.svgporn.com/logos/tailwindcss-icon.svg
+          image: /img/logos/tailwindcss.svg
         - name: MDX
-          image: https://cdn.svgporn.com/logos/mdx.svg
+          image: /img/logos/mdx.svg
         - name: Algolia
-          image: https://cdn.svgporn.com/logos/algolia.svg
+          image: /img/logos/algolia.svg
         - name: GitHub
-          image: https://cdn.svgporn.com/logos/github-octocat.svg
+          image: /img/logos/github.svg
     - title: Hugo Developer Portfolio
       company: Personal Project
       date: "2019"
@@ -51,48 +51,51 @@ portfolio:
       link: "/portfolio/notes-website/"
       tools:
         - name: Hugo
-          image: https://cdn.svgporn.com/logos/hugo.svg
+          image: /img/logos/hugo.svg
         - name: UIKit
-          image: https://cdn.svgporn.com/logos/uikit.svg
+          image: /img/logos/uikit.svg
         - name: Forestry
-          image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593603175/forestry-pos-full_lid6rs.svg
+          image: /img/logos/forestry.svg
 achievements:
   enable: true
   item:
     - event: Magic Hackathon
       award: Winner
       date: November 2020
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1604604598/magic_bx5znv.svg
+      image: /img/logos/magic.svg
       background: bg-indigo-100
     - event: Auth0 Hackathon
       award: 3rd Place Security
       date: July 2020
-      image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793268/logos/logos_auth0_ruvdmp.svg
+      image: /img/logos/auth0.svg
       background: bg-orange-100
     - event: GNOME Community Engagement Challenge
       award: Phase 1 Winner
       date: July 2020
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/CEChallenge_wdgqc9.webp
+      image: /img/logos/gnomecec.webp
+      fallback: /img/logos/gnomecec.png
       background: bg-blue-100
     - event: Microsoft Certification
       award: Azure Fundamentals
       date: June 2020
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1592501459/microsoft-certified-fundamentals-badge_cpcgyn.svg
+      image: /img/logos/azure_fundamentals.svg
       background: bg-blue-100
     - event: Oxford Digithon
       award: Most Creative Hack
       date: June 2020
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
+      image: /img/logos/oxford_digithon.webp
+      fallback: /img/logos/oxford_digithon.png
       background: bg-yellow-100
     - event: Durhack 2019
       award: Finalists and best use of MongoDB
       date: November 2019
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1601719076/dh19_dfcja5.svg
+      image: /img/logos/dh19.svg
       background: bg-purple-100
     - event: Durhack 2018
       award: Funniest Hack
       date: November 2018
-      image: https://res.cloudinary.com/samrobbins/image/upload/v1601476994/DH18_frqbun.webp
+      image: /img/logos/dh18.webp
+      fallback: /img/logos/dh18.png
       background: bg-purple-100
 banner:
   title: ""

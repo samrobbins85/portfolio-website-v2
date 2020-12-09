@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "hugo --minify",
-    "dev": "hugo server -D"
+    "dev": "hugo server -D --disableFastRender"
   },
   "dependencies": {
     "@samrobbins/typography": "^1.1.0",
