@@ -9,7 +9,7 @@ date: 2020-05-30T23:00:00.000Z
 description: A Firefox Browser Extension
 github:
   - "https://github.com/karina-talibzhanova/oxfordhack2020"
-image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
+image: /img/portfolio_cover/digithon.png
 site: ""
 title: Oxford Digithon
 type: ""

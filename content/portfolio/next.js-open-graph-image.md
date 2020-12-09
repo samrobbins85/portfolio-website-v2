@@ -5,7 +5,7 @@ coders: []
 date: 2020-12-06T00:00:00.000Z
 description: A tool for generating open graph images made with Next.js
 github: []
-image: "https://res.cloudinary.com/samrobbins/image/upload/v1607283146/og_fzgd5b.png"
+image: "/img/portfolio_cover/og.png"
 site: "https://og.samrobbins.uk/"
 title: Next.js Open Graph Image
 tech:

@@ -6,7 +6,7 @@ date: 2020-08-17T23:00:00.000Z
 description: Alternate styling for remark admonitions
 github:
   - "https://github.com/samrobbins85/remark-admonitions-styles"
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598877402/admonition_tkwgpn.png
+image: /img/portfolio_cover/admonition.png
 site: "https://tw-remark-admonitions.vercel.app/"
 title: Remark Admonitions Styles
 tech:

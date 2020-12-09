@@ -7,7 +7,7 @@ description: A website to store my notes
 github:
   - "https://github.com/samrobbins85/general-notes"
   - "https://github.com/samrobbins85/notes-og-image"
-image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867672/android-chrome-512x512_mtqwtx.png
+image: /img/portfolio_cover/student.png
 site: "https://csnotes.me"
 title: Notes Website
 type: ""

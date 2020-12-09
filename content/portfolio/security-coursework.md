@@ -6,7 +6,7 @@ date: 2019-12-06T00:00:00.000Z
 description: Performing a Pentest and CTF on a Virtual Machine
 github:
   - "https://github.com/samrobbins85/NS-Security-Coursework"
-image: https://res.cloudinary.com/samrobbins/image/upload/v1605615915/Security_ixezad.svg
+image: /img/portfolio_cover/security.svg
 site: ""
 title: Security Coursework
 tech:
