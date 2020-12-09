@@ -1,47 +1,43 @@
-+++
-categories = ["web-dev"]
-coders = []
-date = 2020-08-30T23:00:00Z
-description = "A website to store my notes"
-github = ["https://github.com/samrobbins85/general-notes", "https://github.com/samrobbins85/notes-og-image"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867672/android-chrome-512x512_mtqwtx.png"
-site = "https://csnotes.me"
-title = "Notes Website"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140056/next-black_csivx6.svg"
-name = "Next.js"
-url = "https://nextjs.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867765/file_type_light_mdx_uoyj29.svg"
-name = "MDX"
-url = "https://mdxjs.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140224/tailwindcss_rnpshz.svg"
-name = "Tailwind CSS"
-url = "https://tailwindcss.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868090/katex_u8nobf.png"
-name = "KaTeX"
-url = "https://katex.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868288/logo_cmoekx.svg"
-name = "Prism"
-url = "https://prismjs.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868195/algolia_c7y4ic.svg"
-name = "Algolia"
-url = "https://www.algolia.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598976828/github_hkr2ql.svg"
-name = "GitHub"
-url = "https://github.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1601460195/kroki_bhdzzy.svg"
-name = "Kroki"
-url = "https://kroki.io/"
+---
+categories:
+  - web-dev
+coders: []
+date: 2020-08-30T23:00:00.000Z
+description: A website to store my notes
+github:
+  - "https://github.com/samrobbins85/general-notes"
+  - "https://github.com/samrobbins85/notes-og-image"
+image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867672/android-chrome-512x512_mtqwtx.png
+site: "https://csnotes.me"
+title: Notes Website
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140056/next-black_csivx6.svg
+    name: Next.js
+    url: "https://nextjs.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598867765/file_type_light_mdx_uoyj29.svg
+    name: MDX
+    url: "https://mdxjs.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140224/tailwindcss_rnpshz.svg
+    name: Tailwind CSS
+    url: "https://tailwindcss.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868090/katex_u8nobf.png
+    name: KaTeX
+    url: "https://katex.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868288/logo_cmoekx.svg
+    name: Prism
+    url: "https://prismjs.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598868195/algolia_c7y4ic.svg
+    name: Algolia
+    url: "https://www.algolia.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598976828/github_hkr2ql.svg
+    name: GitHub
+    url: "https://github.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1601460195/kroki_bhdzzy.svg
+    name: Kroki
+    url: "https://kroki.io/"
+---
 
-+++
 ## Content format
 
 The format I chose for the content is [MDX](https://mdxjs.com/), I had heard good things about it, and used it a bit when contributing to the Vercel documentation. It allows me to use standard markdown syntax but also allows for adding in JSX components. Another benefit is that it uses Remark and Rehype for markdown processing, allowing for the use of the wide range of plugins.
@@ -115,10 +111,7 @@ For UTF-8 encoding I just used the `uft8` package, but the compression required 
 ```js
 var bytes = utf8.encode(props.children);
 const compressed = pako.deflate(bytes, { level: 9, to: "string" });
-var result = base64
-  .encode(compressed)
-  .replace(/\+/g, "-")
-  .replace(/\//g, "_");
+var result = base64.encode(compressed).replace(/\+/g, "-").replace(/\//g, "_");
 return <img src={"https://kroki.io/graphviz/svg/" + result} />;
 ```
 

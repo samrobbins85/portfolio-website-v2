@@ -1,26 +1,29 @@
-+++
-categories = ["hackathon"]
-coders = ["samrobbins85", "karina-talibzhanova"]
-date = 2020-06-11T23:00:00Z
-description = "An Android App to keep track of electronic components"
-github = ["https://github.com/samrobbins85/locatemytech"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593354325/original-removebg-preview_ywohmf.png"
-title = "Same Home Different Hacks"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592150134/dart_eivof0.svg"
-name = "Dart"
-url = "https://dart.dev/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592150085/flutter_hxftsi.svg"
-name = "Flutter"
-url = "https://flutter.dev/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592151079/Cloud_Firestore_1-_Icon_Light_sddjno.svg"
-name = "Google Firestore"
-url = "https://firebase.google.com/products/firestore"
+---
+categories:
+  - hackathon
+coders:
+  - samrobbins85
+  - karina-talibzhanova
+date: 2020-06-11T23:00:00.000Z
+description: An Android App to keep track of electronic components
+github:
+  - "https://github.com/samrobbins85/locatemytech"
+image: >-
+  https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593354325/original-removebg-preview_ywohmf.png
+title: Same Home Different Hacks
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592150134/dart_eivof0.svg
+    name: Dart
+    url: "https://dart.dev/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592150085/flutter_hxftsi.svg
+    name: Flutter
+    url: "https://flutter.dev/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1592151079/Cloud_Firestore_1-_Icon_Light_sddjno.svg
+    name: Google Firestore
+    url: "https://firebase.google.com/products/firestore"
+---
 
-+++
 In this project we made an Android app to keep track of electronic components.
 
 ## Installation

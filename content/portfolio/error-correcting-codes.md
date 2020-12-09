@@ -1,22 +1,23 @@
-+++
-categories = ["coursework", "python"]
-coders = []
-date = 2019-02-15T00:00:00Z
-description = "Implementing a range of algorithms for error correcting codes"
-github = []
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531664/Hamming_distance_3_bit_binary_bxipcz.svg"
-title = "Error Correcting Codes"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg"
-name = "Python"
-url = "https://www.python.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531782/numpy_qiayvh.svg"
-name = "NumPy"
-url = "https://numpy.org/"
+---
+categories:
+  - coursework
+  - python
+coders: []
+date: 2019-02-15T00:00:00.000Z
+description: Implementing a range of algorithms for error correcting codes
+github: []
+image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531664/Hamming_distance_3_bit_binary_bxipcz.svg
+title: Error Correcting Codes
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg
+    name: Python
+    url: "https://www.python.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531782/numpy_qiayvh.svg
+    name: NumPy
+    url: "https://numpy.org/"
+---
 
-+++
 In this coursework I implemented a range of functions for different methods of error correcting codes
 
 ## Hamming codes

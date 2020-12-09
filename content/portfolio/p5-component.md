@@ -1,22 +1,24 @@
-+++
-categories = ["web-dev", "coursework"]
-coders = []
-date = 2019-02-14T00:00:00Z
-description = "Creating a reusable component from a p5 Sketch"
-github = ["https://github.com/samrobbins85/Programming-P5-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593512330/p5js_hcoqdy.svg"
-title = "p5 Component"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg"
-name = "JavaScript"
-url = "https://www.ecma-international.org/memento/tc39.htm"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593512330/p5js_hcoqdy.svg"
-name = "p5"
-url = "https://p5js.org/"
+---
+categories:
+  - web-dev
+  - coursework
+coders: []
+date: 2019-02-14T00:00:00.000Z
+description: Creating a reusable component from a p5 Sketch
+github:
+  - "https://github.com/samrobbins85/Programming-P5-Coursework"
+image: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593512330/p5js_hcoqdy.svg
+title: p5 Component
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg
+    name: JavaScript
+    url: "https://www.ecma-international.org/memento/tc39.htm"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593512330/p5js_hcoqdy.svg
+    name: p5
+    url: "https://p5js.org/"
+---
 
-+++
 In this coursework we were to take a p5 sketch from [https://www.openprocessing.org/](https://www.openprocessing.org/ "https://www.openprocessing.org/") and adapt it into a reusable component. For this I used the sketch [https://www.openprocessing.org/sketch/429506](https://www.openprocessing.org/sketch/429506 "https://www.openprocessing.org/sketch/429506"). It looks like this:
 
 ![Image of sketch](https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593525155/2020-06-30_14-52_j7lpkb.png)
@@ -28,6 +30,7 @@ This only needs an internet connection to request the various libraries involved
 ## Example functions
 
 ### Setup
+
 ```js
 function setup() {
   createCanvas(windowWidth, windowHeight);

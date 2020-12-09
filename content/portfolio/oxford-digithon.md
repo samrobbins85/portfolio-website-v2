@@ -1,23 +1,27 @@
-+++
-categories = ["hackathon", "web-dev"]
-coders = ["samrobbins85", "karina-talibzhanova"]
-date = 2020-05-30T23:00:00Z
-description = "A Firefox Browser Extension"
-github = ["https://github.com/karina-talibzhanova/oxfordhack2020"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp"
-site = ""
-title = "Oxford Digithon"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg"
-name = "JavaScript"
-url = "https://www.ecma-international.org/memento/tc39.htm"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368547/firefox-ar21_cps6me.svg"
-name = "Firefox WebExtensions"
-url = "https://www.mozilla.org/en-GB/firefox/"
+---
+categories:
+  - hackathon
+  - web-dev
+coders:
+  - samrobbins85
+  - karina-talibzhanova
+date: 2020-05-30T23:00:00.000Z
+description: A Firefox Browser Extension
+github:
+  - "https://github.com/karina-talibzhanova/oxfordhack2020"
+image: https://res.cloudinary.com/samrobbins/image/upload/v1601476824/twoo_vhlhvj.webp
+site: ""
+title: Oxford Digithon
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg
+    name: JavaScript
+    url: "https://www.ecma-international.org/memento/tc39.htm"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368547/firefox-ar21_cps6me.svg
+    name: Firefox WebExtensions
+    url: "https://www.mozilla.org/en-GB/firefox/"
+---
 
-+++
 For this project we created a web browser extension designed to make you less productive. It did this by making productive websites difficult to use and directing you away from them. You can see our demonstration video here:
 
 {{< youtube id="b_KQsr_vBSI" autoplay="false" >}}
@@ -28,7 +32,7 @@ This was created using the WebExtensions API so should be compatible with browse
 
 To install, first download the project from the GitHub linked at the top of the page
 
-``` bash
+```bash
 git clone https://github.com/karina-talibzhanova/oxfordhack2020.git
 ```
 
@@ -49,7 +53,6 @@ async function handleActivated(info) {
     console.error(error);
   }
 }
-
 
 function handleUpdated(tabId, changeInfo, tabInfo) {
   if (changeInfo.url) {
@@ -115,13 +118,14 @@ function time_notification(url, tabID) {
 Due to the more aggressive nature of this intervention, it needed to be implemented as a content script, which we named `page-eater.js`. This file is then referenced in the `manifest.json` in the following way:
 
 ```json
-{"content_scripts": [
+{
+  "content_scripts": [
     {
       "matches": ["*://*/*"],
       "js": ["page-eater.js"]
     }
   ]
-  }
+}
 ```
 
 The `"matches"` parameter takes a regular expression of which pages to run on, in our case, most pages, the `"js"` parameter then takes the file name of the content script.

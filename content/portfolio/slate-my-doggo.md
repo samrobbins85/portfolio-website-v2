@@ -1,26 +1,27 @@
-+++
-categories = ["coursework", "web-dev"]
-coders = []
-date = 2019-05-01T23:00:00Z
-description = "A simple social media app"
-github = ["https://github.com/samrobbins85/Progamming-REST-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1599847983/DoogieDoodle_1_uksynv.svg"
-title = "Slate my doggo"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg"
-name = "JavaScript"
-url = "https://www.ecma-international.org/memento/tc39.htm"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593447212/nodejs-1_nrbgo0.svg"
-name = "Node.js"
-url = "https://nodejs.org/en/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593601881/reddit_s5u1nb.svg"
-name = "Reddit API"
-url = "https://www.ecma-international.org/memento/tc39.htm"
+---
+categories:
+  - coursework
+  - web-dev
+coders: []
+date: 2019-05-01T23:00:00.000Z
+description: A simple social media app
+github:
+  - "https://github.com/samrobbins85/Progamming-REST-Coursework"
+image: https://res.cloudinary.com/samrobbins/image/upload/v1599847983/DoogieDoodle_1_uksynv.svg
+title: Slate my doggo
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793272/logos/logos_javascript_adj1dx.svg
+    name: JavaScript
+    url: "https://www.ecma-international.org/memento/tc39.htm"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593447212/nodejs-1_nrbgo0.svg
+    name: Node.js
+    url: "https://nodejs.org/en/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593601881/reddit_s5u1nb.svg
+    name: Reddit API
+    url: "https://www.reddit.com/"
+---
 
-+++
 This site has a simple user interface with two buttons. The show me a random doggo button will select a random image, and the associated comments. The gimme more doggos button fetches new images using the Reddit API.
 
 ![Screenshot of the site](https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593602175/Screenshot_2020-07-01_Slate_my_Doggo_omtno5.png)

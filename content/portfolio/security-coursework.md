@@ -1,30 +1,29 @@
-+++
-categories = ["coursework"]
-coders = []
-date = 2019-12-06T00:00:00Z
-description = "Performing a Pentest and CTF on a Virtual Machine"
-github = ["https://github.com/samrobbins85/NS-Security-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1605615915/Security_ixezad.svg"
-site = ""
-title = "Security Coursework"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475099/Kali_Linux_2.0_wordmark_wsz9aw.svg"
-name = "Kali Linux"
-url = "https://www.kali.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475328/nmap-logo-64px_sdhhyu.svg"
-name = "nmap"
-url = "https://nmap.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475230/logo_john_the_ripper_newolr.png"
-name = "John the Ripper"
-url = "https://www.openwall.com/john/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475460/Grub_logo_large_s4qmeb.png"
-name = "GRUB"
-url = "https://www.gnu.org/software/grub/"
+---
+categories:
+  - coursework
+coders: []
+date: 2019-12-06T00:00:00.000Z
+description: Performing a Pentest and CTF on a Virtual Machine
+github:
+  - "https://github.com/samrobbins85/NS-Security-Coursework"
+image: https://res.cloudinary.com/samrobbins/image/upload/v1605615915/Security_ixezad.svg
+site: ""
+title: Security Coursework
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475099/Kali_Linux_2.0_wordmark_wsz9aw.svg
+    name: Kali Linux
+    url: "https://www.kali.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475328/nmap-logo-64px_sdhhyu.svg
+    name: nmap
+    url: "https://nmap.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475230/logo_john_the_ripper_newolr.png
+    name: John the Ripper
+    url: "https://www.openwall.com/john/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599475460/Grub_logo_large_s4qmeb.png
+    name: GRUB
+    url: "https://www.gnu.org/software/grub/"
+---
 
-+++
 For this coursework we were to find vulnerabilities in a system and explain how they could be mitigated, along with solving a murder mystery in the system, which required finding and decoding a range of files.
 
 # Vulnerabilities
@@ -69,7 +68,7 @@ This can be mitigated by using regular expressions to prevent the typing of this
 
 On the login page providing the username `' OR 1==1 --` and clicking login allows you to log in as root. Prepared statements should be used here to insert the login information so the username and password can't be run as code.
 
-## You can get a root shell from GRUB 
+## You can get a root shell from GRUB
 
 By editing the boot command to run `init=/bin/sh`, you will get a root shell. A password should be added to GRUB to mitigate this.
 
