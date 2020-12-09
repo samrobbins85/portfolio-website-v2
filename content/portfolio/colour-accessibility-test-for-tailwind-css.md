@@ -1,26 +1,26 @@
-+++
-categories = ["web-dev"]
-coders = []
-date = 2020-11-29T00:00:00Z
-description = "Test contrasting colours against the WCAG standards"
-github = ["https://github.com/samrobbins85/colour-a11y-for-tailwind"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1606661900/day71-designer-tool-essential_cazmpi.svg"
-site = "https://colour-a11y.vercel.app/"
-title = "Colour accessibility test for Tailwind CSS"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1597140224/tailwindcss_rnpshz.svg"
-name = "Tailwind CSS"
-url = "https://tailwindcss.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1606660202/headless_f6rnbz.svg"
-name = "Headless UI"
-url = "https://headlessui.dev/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1597140056/next-black_csivx6.svg"
-name = "Next.js"
-url = "https://nextjs.org/"
+---
+categories:
+  - web-dev
+coders: []
+date: 2020-11-29T00:00:00.000Z
+description: Test contrasting colours against the WCAG standards
+github:
+  - "https://github.com/samrobbins85/colour-a11y-for-tailwind"
+image: /img/portfolio_cover/colour.svg
+site: "https://colour-a11y.vercel.app/"
+title: Colour accessibility test for Tailwind CSS
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1597140224/tailwindcss_rnpshz.svg
+    name: Tailwind CSS
+    url: "https://tailwindcss.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1606660202/headless_f6rnbz.svg
+    name: Headless UI
+    url: "https://headlessui.dev/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1597140056/next-black_csivx6.svg
+    name: Next.js
+    url: "https://nextjs.org/"
+---
 
-+++
 I'm a big fan of Tailwind CSS, in part for it giving an already set up colour scheme. But one thing I've fallen foul of in the past is using the colours in a way that is accessible. The gradients are already set up in a way that gives you a good estimate as around 700+ on white will be accessible and around less than 500 on white.
 
 However, this changes between the different colours, so I wanted to build a site which showed the accessibility scores for all the colours, making it easy to see which ones to use. This also provides the scope for testing the colours on a wide range of backgrounds.
@@ -28,7 +28,7 @@ However, this changes between the different colours, so I wanted to build a site
 The start of this was getting the `tailwindcss/colours` object, which provides hex values for all the colours, and this was as simple as
 
 ```js
-const colors = require("tailwindcss/colors")
+const colors = require("tailwindcss/colors");
 ```
 
 I could then map over this object, being careful to exclude black and white as they have just one value
@@ -44,7 +44,7 @@ And within this I could then use a similar method to map over the shades
 I then used the npm package `wcag-contrast` which makes it easy to get a WCAG score from two colours like this
 
 ```js
-score(hex(colour1,colour2))
+score(hex(colour1, colour2));
 ```
 
 And all these results were just displayed in a grid with varying columns for different viewport sizes. Setting a default width then using flex wrap may have given a better experience, but grid columns give a very reliable output.

@@ -1,18 +1,21 @@
-+++
-categories = ["coursework", "python"]
-coders = []
-date = 2019-01-21T00:00:00Z
-description = "A range of code relating to Algorithms and Data Structures"
-github = ["https://github.com/samrobbins85/ADS-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593535123/Big-o-approx-logo_ci9nny.svg"
-title = "Algorithms and Data Structures"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg"
-name = "Python"
-url = "https://www.python.org/"
+---
+categories:
+  - coursework
+  - python
+coders: []
+date: 2019-01-21T00:00:00.000Z
+description: A range of code relating to Algorithms and Data Structures
+github:
+  - "https://github.com/samrobbins85/ADS-Coursework"
+image: /img/portfolio_cover/big-o.svg
+title: Algorithms and Data Structures
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg
+    name: Python
+    url: "https://www.python.org/"
+---
 
-+++
 ## Hash Table
 
 The code for this algorithm can be found in `Question 1/q1.py`

@@ -1,18 +1,20 @@
-+++
-categories = ["coursework"]
-coders = []
-date = 2020-03-02T00:00:00Z
-description = "Implementing Conway's Game of Life in C"
-github = ["https://github.com/samrobbins85/PP-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598984975/Game_of_life_infinite2_k0a9dl.svg"
-site = ""
-title = "Conway's Game of Life"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793268/logos/logos_c_vv6oat.svg"
-name = "C"
-url = "https://www.iso.org/standard/74528.html"
+---
+categories:
+  - coursework
+coders: []
+date: 2020-03-02T00:00:00.000Z
+description: Implementing Conway's Game of Life in C
+github:
+  - "https://github.com/samrobbins85/PP-Coursework"
+image: /img/portfolio_cover/gol.svg
+site: ""
+title: Conway's Game of Life
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793268/logos/logos_c_vv6oat.svg
+    name: C
+    url: "https://www.iso.org/standard/74528.html"
+---
 
-+++
 For this coursework we were to implement Conway's Game of Life in C. This consists of a DLL and a program that calls the library for key functionality.
 
 ## Dynamically Linked Library
@@ -35,11 +37,11 @@ The main challenge of this was to use dynamic memory allocation, whereby the pro
 
 The program had to take a range of inputs to pass to the library, they can be seen as follows
 
-* `-i input_filename` to specify that the initial generation of the universe should be read from a file. If this option is not selected, you should let the user type in the input
-* `-o output_filename` to specify a file into which the final generation should be output. If this option is not specified, you should output the final generation on the screen
-* `-g number_of_generations` to specify the number of new generations for which the game should be run (set to 5 if this option is not given)
-* `-s` to print statistics after the final generation has been output
-* `-t` to use the torus topology for the rule. If this is not specified, use the rule for the cells outside the universe being permanently dead
+- `-i input_filename` to specify that the initial generation of the universe should be read from a file. If this option is not selected, you should let the user type in the input
+- `-o output_filename` to specify a file into which the final generation should be output. If this option is not specified, you should output the final generation on the screen
+- `-g number_of_generations` to specify the number of new generations for which the game should be run (set to 5 if this option is not given)
+- `-s` to print statistics after the final generation has been output
+- `-t` to use the torus topology for the rule. If this is not specified, use the rule for the cells outside the universe being permanently dead
 
 ## Build system
 

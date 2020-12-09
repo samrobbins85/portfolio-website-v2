@@ -1,18 +1,21 @@
-+++
-categories = ["coursework", "python"]
-coders = []
-date = 2020-01-20T00:00:00Z
-description = "Implementing Algorithms to solve the travelling salesman problem"
-github = ["https://github.com/samrobbins85/SM-AI_Search-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1598956703/android-chrome-512x512_nr59cj.png"
-site = ""
-title = "AI Search"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg"
-name = "Python"
-url = "https://www.python.org/"
+---
+categories:
+  - coursework
+  - python
+coders: []
+date: 2020-01-20T00:00:00.000Z
+description: Implementing Algorithms to solve the travelling salesman problem
+github:
+  - "https://github.com/samrobbins85/SM-AI_Search-Coursework"
+image: /img/portfolio_cover/tsp.png
+site: ""
+title: AI Search
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg
+    name: Python
+    url: "https://www.python.org/"
+---
 
-+++
 For this project we were to implement two algorithms for solving the travelling salesman problem.
 
 I decided to implement Christofides algorithm and a Greedy Algorithm.
@@ -74,4 +77,4 @@ I performed an enhancement on this in the final step of skipping repeated vertic
 
 ## Performance
 
-In all but one of the hidden files tested on, my enhancement yielded a better result. In the one that didn't it matched the length. 
+In all but one of the hidden files tested on, my enhancement yielded a better result. In the one that didn't it matched the length.

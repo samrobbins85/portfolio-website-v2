@@ -1,50 +1,44 @@
-+++
-categories = ["web-dev"]
-coders = []
-date = 2020-09-03T23:00:00Z
-description = "A website to compare DNS services"
-github = ["https://github.com/samrobbins85/dns-comparison"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599384587/undraw_connected_world_wuay_brt5oo.svg"
-site = "https://dns-compare.vercel.app/"
-title = "DNS Comparison Website"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140056/next-black_csivx6.svg"
-name = "Next.js"
-url = "https://nextjs.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599384876/chartjs_bbnev1.svg"
-name = "ChartJS"
-url = "https://www.chartjs.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599384797/57233884-20344080-6fe5-11e9-8df3-0df1282e1574-removebg-preview_lmdhtx.png"
-name = "Axios"
-url = "https://github.com/axios/axios"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140224/tailwindcss_rnpshz.svg"
-name = "Tailwind CSS"
-url = "https://tailwindcss.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599472937/logo-light-66d4dd9109004332c863391e6d1cb309_a5sijd.svg"
-name = "React Table"
-url = "https://react-table.tanstack.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385171/quad9-ar21_pvbbxd.svg"
-name = "Quad9"
-url = "https://www.quad9.net/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385202/Cloudflare-logo-vector_vuznng.svg"
-name = "Cloudflare DNS"
-url = "https://www.cloudflare.com/dns/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385236/google_j1hisv.svg"
-name = "Google DNS"
-url = "https://developers.google.com/speed/public-dns"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1601462140/papaparse_gc0fgl.png"
-name = "Papa Parse"
-url = "https://www.papaparse.com/"
+---
+categories:
+  - web-dev
+coders: []
+date: 2020-09-03T23:00:00.000Z
+description: A website to compare DNS services
+github:
+  - "https://github.com/samrobbins85/dns-comparison"
+image: /img/portfolio_cover/connected_world.svg
+site: "https://dns-compare.vercel.app/"
+title: DNS Comparison Website
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140056/next-black_csivx6.svg
+    name: Next.js
+    url: "https://nextjs.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599384876/chartjs_bbnev1.svg
+    name: ChartJS
+    url: "https://www.chartjs.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599384797/57233884-20344080-6fe5-11e9-8df3-0df1282e1574-removebg-preview_lmdhtx.png
+    name: Axios
+    url: "https://github.com/axios/axios"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1597140224/tailwindcss_rnpshz.svg
+    name: Tailwind CSS
+    url: "https://tailwindcss.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599472937/logo-light-66d4dd9109004332c863391e6d1cb309_a5sijd.svg
+    name: React Table
+    url: "https://react-table.tanstack.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385171/quad9-ar21_pvbbxd.svg
+    name: Quad9
+    url: "https://www.quad9.net/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385202/Cloudflare-logo-vector_vuznng.svg
+    name: Cloudflare DNS
+    url: "https://www.cloudflare.com/dns/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1599385236/google_j1hisv.svg
+    name: Google DNS
+    url: "https://developers.google.com/speed/public-dns"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1601462140/papaparse_gc0fgl.png
+    name: Papa Parse
+    url: "https://www.papaparse.com/"
+---
 
-+++
 This site compares the performance of different DNS services. It does this in a range of ways, depending on your requirements.
 
 ## Single domain comparison
@@ -63,7 +57,7 @@ This uses Chart.js for the data visualisation and react-table for the paginated 
 
 ## Server generated results
 
-While the bulk comparison is good for small amounts of domains, when the number gets larger you'd be waiting hours to get a result. To solve this, results based on open source datasets are processed on a server, which you can then view in the website. 
+While the bulk comparison is good for small amounts of domains, when the number gets larger you'd be waiting hours to get a result. To solve this, results based on open source datasets are processed on a server, which you can then view in the website.
 
 This uses papaparse to parse in a CSV and Chart.js for the data visualisation
 

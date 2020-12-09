@@ -1,0 +1,30 @@
+baseURL: "https://samrobbins.uk"
+languageCode: en-gb
+title: Sam Robbins
+theme: tailwind-developer-website
+googleAnalytics: G-VMYNYEWJCJ
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+sectionPagesMenu: main
+metaDataFormat: yaml
+params:
+  home: Home
+  description:
+    The website of Sam Robbins, 3rd Year Computer Science Student at Durham
+    University
+  author: Sam Robbins
+markup:
+  goldmark:
+    extensions:
+      footnote: true
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    tabWidth: 4

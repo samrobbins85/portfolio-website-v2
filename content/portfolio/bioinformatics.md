@@ -1,26 +1,27 @@
-+++
-categories = ["coursework", "python"]
-coders = []
-date = 2019-05-02T23:00:00Z
-description = "Writing a range of algorithms for Bioinformatics"
-github = ["https://github.com/samrobbins85/CT-Bioinformatics-Coursework"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593532533/DNA_small_nbd7r5.svg"
-title = "Bioinformatics"
-type = ""
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531782/numpy_qiayvh.svg"
-name = "NumPy"
-url = "https://numpy.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593526379/networkx_logo_zuw9qa.svg"
-name = "NetworkX"
-url = "https://networkx.github.io/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg"
-name = "Python"
-url = "https://www.python.org/"
+---
+categories:
+  - coursework
+  - python
+coders: []
+date: 2019-05-02T23:00:00.000Z
+description: Writing a range of algorithms for Bioinformatics
+github:
+  - "https://github.com/samrobbins85/CT-Bioinformatics-Coursework"
+image: /img/portfolio_cover/dna.svg
+title: Bioinformatics
+type: ""
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593531782/numpy_qiayvh.svg
+    name: NumPy
+    url: "https://numpy.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593526379/networkx_logo_zuw9qa.svg
+    name: NetworkX
+    url: "https://networkx.github.io/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1591793276/logos/logos_python_pjlesq.svg
+    name: Python
+    url: "https://www.python.org/"
+---
 
-+++
 ## DNA Alignment
 
 This takes two DNA sequences and produces the optimal alignment. This is done by filling out a backtracking matrix.
@@ -108,6 +109,7 @@ def gen_seq(backtrack,str1,str2):
 ```
 
 ### Drawing a phylogenetic tree
+
 This task is to generate a phylogenetic tree based on an input distance matrix
 
 For brevity I have removed the code which formats the input from the file so that it can be worked on along with the code to output the tree.

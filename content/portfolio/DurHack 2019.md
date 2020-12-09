@@ -1,35 +1,35 @@
 ---
 title: Durhack 2019
 date: 2020-01-01T15:19:11.000+00:00
-image: https://res.cloudinary.com/samrobbins/image/upload/v1601719076/dh19_dfcja5.svg
+image: /img/logos/dh19.svg
 categories:
-- web-dev
-- hackathon
+  - web-dev
+  - hackathon
 description: A tool to help people with dementia
 type: post
 coders:
-- samrobbins85
-- tomnudd
-- karina-talibzhanova
-- MAGGithub1
+  - samrobbins85
+  - tomnudd
+  - karina-talibzhanova
+  - MAGGithub1
 github:
-- https://github.com/tomnudd/durhack
+  - https://github.com/tomnudd/durhack
 tech:
-- name: Node.js
-  logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593447212/nodejs-1_nrbgo0.svg
-  url: https://nodejs.org/en/
-- name: MongoDB
-  logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368862/MongoDB-Logo_gq5otw.svg
-  url: https://www.mongodb.com/
-- name: Capital One
-  logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368806/capital-one-2_zhtqjq.svg
-  url: https://www.capitalone.co.uk/
-- name: Twilio
-  logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368747/twilio-2_rqhhfg.svg
-  url: https://www.twilio.com/
-site: ''
-
+  - name: Node.js
+    logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593447212/nodejs-1_nrbgo0.svg
+    url: https://nodejs.org/en/
+  - name: MongoDB
+    logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368862/MongoDB-Logo_gq5otw.svg
+    url: https://www.mongodb.com/
+  - name: Capital One
+    logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368806/capital-one-2_zhtqjq.svg
+    url: https://www.capitalone.co.uk/
+  - name: Twilio
+    logo: https://res.cloudinary.com/samrobbins/image/upload/q_auto/v1593368747/twilio-2_rqhhfg.svg
+    url: https://www.twilio.com/
+site: ""
 ---
+
 ![](https://res.cloudinary.com/samrobbins/image/upload/v1591793300/images/portfolio/images_portfolio_durhack2019_pyn6xr.png)
 
 Our project was to build a tool to help people with dementia remember things, this is implemented in various ways, as described below.

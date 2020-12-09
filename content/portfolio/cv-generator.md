@@ -1,30 +1,30 @@
-+++
-categories = ["web-dev", "hackathon"]
-coders = []
-date = 2020-11-01T00:00:00Z
-description = "A website to generate CVs"
-github = ["https://github.com/samrobbins85/cv-generator"]
-image = "https://res.cloudinary.com/samrobbins/image/upload/v1604328156/undraw_Resume_folder_re_e0bi_flm8uj.svg"
-site = "https://cvgen.vercel.app"
-title = "CV Generator"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1597140056/next-black_csivx6.svg"
-name = "Next.js"
-url = "https://nextjs.org/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1604328310/Fauna-logo-blue_dsfrvj.png"
-name = "Fauna"
-url = "https://fauna.com/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1604328242/magic_j1u8fv.svg"
-name = "Magic Link"
-url = "https://magic.link/"
-[[tech]]
-logo = "https://res.cloudinary.com/samrobbins/image/upload/v1597140224/tailwindcss_rnpshz.svg"
-name = "Tailwind CSS"
-url = "https://tailwindcss.com/"
+---
+categories:
+  - web-dev
+  - hackathon
+coders: []
+date: 2020-11-01T00:00:00.000Z
+description: A website to generate CVs
+github:
+  - "https://github.com/samrobbins85/cv-generator"
+image: /img/portfolio_cover/cv_generator.svg
+site: "https://cvgen.vercel.app"
+title: CV Generator
+tech:
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1597140056/next-black_csivx6.svg
+    name: Next.js
+    url: "https://nextjs.org/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1604328310/Fauna-logo-blue_dsfrvj.png
+    name: Fauna
+    url: "https://fauna.com/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1604328242/magic_j1u8fv.svg
+    name: Magic Link
+    url: "https://magic.link/"
+  - logo: https://res.cloudinary.com/samrobbins/image/upload/v1597140224/tailwindcss_rnpshz.svg
+    name: Tailwind CSS
+    url: "https://tailwindcss.com/"
+---
 
-+++
 For this project, I started with the [template from magic labs](https://github.com/magiclabs/example-nextjs-faunadb-todomvc), this allowed me to make sure that my connection to the database and authentication was set up correctly.
 
 Next, I converted the CSS over to use Tailwind CSS, this allowed me to better understand the layout of the application and make changes to designs faster and without unexpected consequences.
