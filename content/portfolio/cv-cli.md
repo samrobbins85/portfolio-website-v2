@@ -9,6 +9,9 @@ image: "/img/portfolio_cover/cli.svg"
 github:
 - https://github.com/samrobbins85/cli-cv
 tech:
+- name: Ink
+  logo: "/img/logos/ink.png"
+  url: https://www.npmjs.com/package/ink
 - name: React
   logo: "/img/logos/react.svg"
   url: https://reactjs.org/
@@ -16,7 +19,6 @@ tech:
   logo: "/img/long_logos/nodejs.svg"
   url: https://nodejs.org/en/
 site: https://www.npmjs.com/package/samrobbins
-draft: true
 
 ---
 This was initially inspired by a project I saw on dev.to to [create a personal npm card](https://dev.to/cdthomp1/create-your-own-npm-card-ejp), this was a great project, and I followed it through and loved the result, but thought I could expand on the idea.
