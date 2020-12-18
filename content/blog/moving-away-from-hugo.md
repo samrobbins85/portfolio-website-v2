@@ -2,7 +2,6 @@
 title: Moving away from Hugo
 date: 2020-12-17T00:00:00+00:00
 description: My decision to move away from Hugo as a Static Site Generator
-draft: true
 
 ---
 As part of the [Digital Ocean App Platform Hackathon](https://dev.to/devteam/announcing-the-digitalocean-app-platform-hackathon-on-dev-2i1k) I am going to remake my Portfolio website. The question here is why, when I have an existing portfolio website that does its job?
