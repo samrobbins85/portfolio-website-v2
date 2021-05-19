@@ -30,6 +30,17 @@
       "destination": "https://samrobbins.uk/portfolio/notes-website/"
     }
   ],
+  "headers":[
+    {
+      "source": "/(.*)",
+      "headers" : [
+        {
+          "key" : "x-robots-tag",
+          "value" : "noindex"
+        }
+      ]
+    }
+  ],
   "build": {
     "env": {
       "HUGO_VERSION": "0.75.1"
